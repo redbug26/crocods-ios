@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0002F28916689C1D0080E188 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0002F28816689C1D0080E188 /* StoreKit.framework */; };
-		000370C5165297EE00A47D64 /* bombjack.dsk in Resources */ = {isa = PBXBuildFile; fileRef = 000370C4165297EE00A47D64 /* bombjack.dsk */; };
 		00055AB5166BBFCF0051BDB0 /* CrocoDSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */; };
 		001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001DEEB0157E0A8200FC0B43 /* background@2x.png */; };
 		007ACB2713FBD17C0034363A /* KKDrawView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2513FBD17C0034363A /* KKDrawView.mm */; };
@@ -37,7 +36,6 @@
 		007ACB9D13FBE32D0034363A /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8F13FBE32D0034363A /* inftrees.c */; };
 		007ACB9E13FBE32D0034363A /* infutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB9113FBE32D0034363A /* infutil.c */; };
 		007ACB9F13FBE32D0034363A /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB9513FBE32D0034363A /* zutil.c */; };
-		007ACBC013FC0AD90034363A /* boulder.sna in Resources */ = {isa = PBXBuildFile; fileRef = 007ACBBF13FC0AD80034363A /* boulder.sna */; };
 		0085BC7113F8F2A0002B438B /* ChoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6813F8F2A0002B438B /* ChoiceCell.m */; };
 		0085BC7213F8F2A0002B438B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6A13F8F2A0002B438B /* ConfigViewController.m */; };
 		0085BC7313F8F2A0002B438B /* KTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */; };
@@ -47,14 +45,7 @@
 		0085BC8613F90FF1002B438B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085BC8513F90FF0002B438B /* AddressBook.framework */; };
 		0085BC9813F926C9002B438B /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC9113F926C3002B438B /* DatePickerController.m */; };
 		009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D823E164FFEB500FD90B7 /* Default-568h@2x.png */; };
-		009D8245165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8241165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk */; };
-		009D8246165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8242165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk */; };
 		009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */; };
-		009D8248165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8244165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk */; };
-		009D824D16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824916500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk */; };
-		009D824E16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824A16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk */; };
-		009D824F16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824B16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk */; };
-		009D825016500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824C16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk */; };
 		009D82591650292400FD90B7 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D82581650292400FD90B7 /* iCadeReaderView.m */; };
 		009D825C1650DA4D00FD90B7 /* files.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825A1650DA4D00FD90B7 /* files.png */; };
 		009D825D1650DA4D00FD90B7 /* files@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825B1650DA4D00FD90B7 /* files@2x.png */; };
@@ -106,7 +97,6 @@
 
 /* Begin PBXFileReference section */
 		0002F28816689C1D0080E188 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		000370C4165297EE00A47D64 /* bombjack.dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = bombjack.dsk; path = Disks/bombjack.dsk; sourceTree = "<group>"; };
 		00055AB3166BBFCF0051BDB0 /* CrocoDSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrocoDSApp.h; sourceTree = "<group>"; };
 		00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrocoDSApp.m; sourceTree = "<group>"; };
 		001DEEB0157E0A8200FC0B43 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
@@ -165,7 +155,6 @@
 		007ACB9413FBE32D0034363A /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		007ACB9513FBE32D0034363A /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		007ACB9613FBE32D0034363A /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
-		007ACBBF13FC0AD80034363A /* boulder.sna */ = {isa = PBXFileReference; lastKnownFileType = file; name = boulder.sna; path = ../Classes/CrocoDS/boulder.sna; sourceTree = "<group>"; };
 		0085BC6713F8F2A0002B438B /* ChoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoiceCell.h; path = Classes/Config/ChoiceCell.h; sourceTree = "<group>"; };
 		0085BC6813F8F2A0002B438B /* ChoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoiceCell.m; path = Classes/Config/ChoiceCell.m; sourceTree = "<group>"; };
 		0085BC6913F8F2A0002B438B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigViewController.h; path = Classes/Config/ConfigViewController.h; sourceTree = "<group>"; };
@@ -182,14 +171,7 @@
 		0085BC9013F926C2002B438B /* DatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerController.h; path = Classes/Config/DatePickerController.h; sourceTree = "<group>"; };
 		0085BC9113F926C3002B438B /* DatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatePickerController.m; path = Classes/Config/DatePickerController.m; sourceTree = "<group>"; };
 		009D823E164FFEB500FD90B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		009D8241165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk"; path = "Disks/Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk"; sourceTree = "<group>"; };
-		009D8242165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Croco Magneto (F) (19xx).dsk"; path = "Disks/Croco Magneto (F) (19xx).dsk"; sourceTree = "<group>"; };
 		009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asteroids (G) (19xx) (PD).dsk"; path = "Disks/Asteroids (G) (19xx) (PD).dsk"; sourceTree = "<group>"; };
-		009D8244165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Boulder Dash (UK) (1984).dsk"; path = "Disks/Boulder Dash (UK) (1984).dsk"; sourceTree = "<group>"; };
-		009D824916500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk"; path = "Disks/Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk"; sourceTree = "<group>"; };
-		009D824A16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk"; path = "Disks/Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk"; sourceTree = "<group>"; };
-		009D824B16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk"; path = "Disks/Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk"; sourceTree = "<group>"; };
-		009D824C16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk"; path = "Disks/Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk"; sourceTree = "<group>"; };
 		009D8255165026EE00FD90B7 /* iCadeState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
 		009D82571650292400FD90B7 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
 		009D82581650292400FD90B7 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
@@ -368,16 +350,7 @@
 		009D8240165007AC00FD90B7 /* Disks */ = {
 			isa = PBXGroup;
 			children = (
-				000370C4165297EE00A47D64 /* bombjack.dsk */,
-				007ACBBF13FC0AD80034363A /* boulder.sna */,
-				009D824916500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk */,
-				009D824A16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk */,
-				009D824B16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk */,
-				009D824C16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk */,
-				009D8241165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk */,
-				009D8242165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk */,
 				009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */,
-				009D8244165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk */,
 			);
 			name = Disks;
 			sourceTree = "<group>";
@@ -592,7 +565,6 @@
 				00ED3BB313E9E5DC00AA663A /* smallfont.png in Resources */,
 				007ACB5613FBD2340034363A /* cpc6128.bin in Resources */,
 				007ACB9713FBE32D0034363A /* romdisc.bin in Resources */,
-				007ACBC013FC0AD90034363A /* boulder.sna in Resources */,
 				00C9F0A714028F2500B0F226 /* key_up.png in Resources */,
 				00C9F0B014029CB800B0F226 /* key_a.png in Resources */,
 				00C9F0B114029CB800B0F226 /* key_b.png in Resources */,
@@ -607,21 +579,13 @@
 				00C9F0EA1403BBD600B0F226 /* karaopocket@2x.png in Resources */,
 				001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */,
 				009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */,
-				009D8245165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk in Resources */,
-				009D8246165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk in Resources */,
 				009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */,
-				009D8248165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk in Resources */,
-				009D824D16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk in Resources */,
-				009D824E16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk in Resources */,
-				009D824F16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk in Resources */,
-				009D825016500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk in Resources */,
 				009D825C1650DA4D00FD90B7 /* files.png in Resources */,
 				009D825D1650DA4D00FD90B7 /* files@2x.png in Resources */,
 				009D82601650DA7C00FD90B7 /* about.png in Resources */,
 				009D82611650DA7C00FD90B7 /* about@2x.png in Resources */,
 				009D82641650DB7200FD90B7 /* gear.png in Resources */,
 				009D82651650DB7200FD90B7 /* gear@2x.png in Resources */,
-				000370C5165297EE00A47D64 /* bombjack.dsk in Resources */,
 				00F8868016676AA000BC5FEA /* cpcpower_236x48.gif in Resources */,
 				00F8868316676E8400BC5FEA /* cpc-wiki.png in Resources */,
 				00F886851667776500BC5FEA /* about-background.png in Resources */,
