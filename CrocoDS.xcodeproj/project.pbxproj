@@ -1,0 +1,808 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0002F28916689C1D0080E188 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0002F28816689C1D0080E188 /* StoreKit.framework */; };
+		000370C5165297EE00A47D64 /* bombjack.dsk in Resources */ = {isa = PBXBuildFile; fileRef = 000370C4165297EE00A47D64 /* bombjack.dsk */; };
+		00055AB5166BBFCF0051BDB0 /* CrocoDSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */; };
+		001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001DEEB0157E0A8200FC0B43 /* background@2x.png */; };
+		007ACB2713FBD17C0034363A /* KKDrawView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2513FBD17C0034363A /* KKDrawView.mm */; };
+		007ACB5313FBD2340034363A /* z80.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2913FBD2340034363A /* z80.c */; };
+		007ACB5413FBD2340034363A /* plateform.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2A13FBD2340034363A /* plateform.c */; };
+		007ACB5513FBD2340034363A /* upd.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2B13FBD2340034363A /* upd.c */; };
+		007ACB5613FBD2340034363A /* cpc6128.bin in Resources */ = {isa = PBXBuildFile; fileRef = 007ACB2C13FBD2340034363A /* cpc6128.bin */; };
+		007ACB5713FBD2340034363A /* font.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2E13FBD2340034363A /* font.c */; };
+		007ACB5813FBD2340034363A /* ppi.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2F13FBD2340034363A /* ppi.c */; };
+		007ACB5913FBD2340034363A /* ziptool.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3013FBD2340034363A /* ziptool.cpp */; };
+		007ACB5B13FBD2340034363A /* crtc.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3213FBD2340034363A /* crtc.c */; };
+		007ACB5C13FBD2340034363A /* config.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3313FBD2340034363A /* config.c */; };
+		007ACB5D13FBD2340034363A /* vga.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3413FBD2340034363A /* vga.c */; };
+		007ACB5E13FBD2340034363A /* snapshot.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3513FBD2340034363A /* snapshot.c */; };
+		007ACB6013FBD2340034363A /* autotype.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3713FBD2340034363A /* autotype.c */; };
+		007ACB6213FBD2340034363A /* log.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3913FBD2340034363A /* log.c */; };
+		007ACB6413FBD2340034363A /* multiface.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3C13FBD2340034363A /* multiface.c */; };
+		007ACB6513FBD2340034363A /* gestport.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB3F13FBD2340034363A /* gestport.c */; };
+		007ACB6613FBD2340034363A /* sound.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB4E13FBD2340034363A /* sound.c */; };
+		007ACB9713FBE32D0034363A /* romdisc.bin in Resources */ = {isa = PBXBuildFile; fileRef = 007ACB8213FBE32B0034363A /* romdisc.bin */; };
+		007ACB9813FBE32D0034363A /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8613FBE32D0034363A /* adler32.c */; };
+		007ACB9913FBE32D0034363A /* infblock.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8713FBE32D0034363A /* infblock.c */; };
+		007ACB9A13FBE32D0034363A /* infcodes.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8913FBE32D0034363A /* infcodes.c */; };
+		007ACB9B13FBE32D0034363A /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8B13FBE32D0034363A /* inffast.c */; };
+		007ACB9C13FBE32D0034363A /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8E13FBE32D0034363A /* inflate.c */; };
+		007ACB9D13FBE32D0034363A /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8F13FBE32D0034363A /* inftrees.c */; };
+		007ACB9E13FBE32D0034363A /* infutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB9113FBE32D0034363A /* infutil.c */; };
+		007ACB9F13FBE32D0034363A /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB9513FBE32D0034363A /* zutil.c */; };
+		007ACBC013FC0AD90034363A /* boulder.sna in Resources */ = {isa = PBXBuildFile; fileRef = 007ACBBF13FC0AD80034363A /* boulder.sna */; };
+		0085BC7113F8F2A0002B438B /* ChoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6813F8F2A0002B438B /* ChoiceCell.m */; };
+		0085BC7213F8F2A0002B438B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6A13F8F2A0002B438B /* ConfigViewController.m */; };
+		0085BC7313F8F2A0002B438B /* KTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */; };
+		0085BC7413F8F2A0002B438B /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6E13F8F2A0002B438B /* SelectionListViewController.m */; };
+		0085BC7513F8F2A0002B438B /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC7013F8F2A0002B438B /* SwitchCell.m */; };
+		0085BC8413F8FD45002B438B /* KDateFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC8313F8FD45002B438B /* KDateFieldCell.m */; };
+		0085BC8613F90FF1002B438B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085BC8513F90FF0002B438B /* AddressBook.framework */; };
+		0085BC9813F926C9002B438B /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC9113F926C3002B438B /* DatePickerController.m */; };
+		009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D823E164FFEB500FD90B7 /* Default-568h@2x.png */; };
+		009D8245165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8241165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk */; };
+		009D8246165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8242165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk */; };
+		009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */; };
+		009D8248165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8244165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk */; };
+		009D824D16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824916500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk */; };
+		009D824E16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824A16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk */; };
+		009D824F16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824B16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk */; };
+		009D825016500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D824C16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk */; };
+		009D82591650292400FD90B7 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D82581650292400FD90B7 /* iCadeReaderView.m */; };
+		009D825C1650DA4D00FD90B7 /* files.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825A1650DA4D00FD90B7 /* files.png */; };
+		009D825D1650DA4D00FD90B7 /* files@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825B1650DA4D00FD90B7 /* files@2x.png */; };
+		009D82601650DA7C00FD90B7 /* about.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825E1650DA7C00FD90B7 /* about.png */; };
+		009D82611650DA7C00FD90B7 /* about@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825F1650DA7C00FD90B7 /* about@2x.png */; };
+		009D82641650DB7200FD90B7 /* gear.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D82621650DB7100FD90B7 /* gear.png */; };
+		009D82651650DB7200FD90B7 /* gear@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D82631650DB7100FD90B7 /* gear@2x.png */; };
+		00C9F0A714028F2500B0F226 /* key_up.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0A614028F2500B0F226 /* key_up.png */; };
+		00C9F0B014029CB800B0F226 /* key_a.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0A914029CB800B0F226 /* key_a.png */; };
+		00C9F0B114029CB800B0F226 /* key_b.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0AA14029CB800B0F226 /* key_b.png */; };
+		00C9F0B214029CB800B0F226 /* key_down.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0AB14029CB800B0F226 /* key_down.png */; };
+		00C9F0B314029CB800B0F226 /* key_left.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0AC14029CB800B0F226 /* key_left.png */; };
+		00C9F0B414029CB800B0F226 /* key_right.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0AD14029CB800B0F226 /* key_right.png */; };
+		00C9F0B514029CB800B0F226 /* key_select.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0AE14029CB800B0F226 /* key_select.png */; };
+		00C9F0B614029CB800B0F226 /* key_start.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0AF14029CB800B0F226 /* key_start.png */; };
+		00C9F0BC14038B2700B0F226 /* microlib.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C9F0BB14038B2700B0F226 /* microlib.c */; };
+		00C9F0C11403963C00B0F226 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00C9F0BF1403963C00B0F226 /* AudioToolbox.framework */; };
+		00C9F0C51403A17400B0F226 /* emu2149.c in Sources */ = {isa = PBXBuildFile; fileRef = 00C9F0C31403A17300B0F226 /* emu2149.c */; };
+		00C9F0E21403BBB400B0F226 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C9F0E11403BBB300B0F226 /* AboutViewController.m */; };
+		00C9F0E71403BBD600B0F226 /* about.html in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0E31403BBD100B0F226 /* about.html */; };
+		00C9F0E81403BBD600B0F226 /* biopocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0E41403BBD200B0F226 /* biopocket@2x.png */; };
+		00C9F0E91403BBD600B0F226 /* karaopocket.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0E51403BBD300B0F226 /* karaopocket.png */; };
+		00C9F0EA1403BBD600B0F226 /* karaopocket@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00C9F0E61403BBD400B0F226 /* karaopocket@2x.png */; };
+		00C9F0F31403CD0C00B0F226 /* MyCatalog.m in Sources */ = {isa = PBXBuildFile; fileRef = 00C9F0F21403CD0C00B0F226 /* MyCatalog.m */; };
+		00D26C1F14018AE500855ACC /* MyKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 00D26C1E14018AE400855ACC /* MyKeyboard.m */; };
+		00ED3B6F13E9E34A00AA663A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED3B6E13E9E34A00AA663A /* UIKit.framework */; };
+		00ED3B7113E9E34A00AA663A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED3B7013E9E34A00AA663A /* Foundation.framework */; };
+		00ED3B7313E9E34A00AA663A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED3B7213E9E34A00AA663A /* CoreGraphics.framework */; };
+		00ED3B7513E9E34A00AA663A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED3B7413E9E34A00AA663A /* QuartzCore.framework */; };
+		00ED3B7713E9E34A00AA663A /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 00ED3B7613E9E34A00AA663A /* OpenGLES.framework */; };
+		00ED3B7D13E9E34A00AA663A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3B7B13E9E34A00AA663A /* InfoPlist.strings */; };
+		00ED3B7F13E9E34A00AA663A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 00ED3B7E13E9E34A00AA663A /* main.m */; };
+		00ED3B8313E9E34A00AA663A /* CrocoDSAppDelegate.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ED3B8213E9E34A00AA663A /* CrocoDSAppDelegate.mm */; };
+		00ED3B9013E9E34B00AA663A /* CrocoDSViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ED3B8F13E9E34B00AA663A /* CrocoDSViewController.mm */; };
+		00ED3BA113E9E3DA00AA663A /* OGLView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 00ED3B9F13E9E3DA00AA663A /* OGLView.mm */; };
+		00ED3BB013E9E5DC00AA663A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3BAB13E9E5DC00AA663A /* background.png */; };
+		00ED3BB213E9E5DC00AA663A /* SimpleFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3BAD13E9E5DC00AA663A /* SimpleFont.png */; };
+		00ED3BB313E9E5DC00AA663A /* smallfont.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3BAE13E9E5DC00AA663A /* smallfont.png */; };
+		00EFF535166A3CA10070DA17 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF52F166A3CA00070DA17 /* Icon-72.png */; };
+		00EFF537166A3CA10070DA17 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF531166A3CA00070DA17 /* Icon-Small-50.png */; };
+		00EFF538166A3CA10070DA17 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF532166A3CA00070DA17 /* Icon-Small-50@2x.png */; };
+		00EFF539166A3CA10070DA17 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF533166A3CA00070DA17 /* Icon.png */; };
+		00EFF53C166A3CEB0070DA17 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF53B166A3CEB0070DA17 /* Icon@2x.png */; };
+		00EFF53E166A3D150070DA17 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF53D166A3D150070DA17 /* Icon-72@2x.png */; };
+		00F8868016676AA000BC5FEA /* cpcpower_236x48.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00F8867F16676AA000BC5FEA /* cpcpower_236x48.gif */; };
+		00F8868316676E8400BC5FEA /* cpc-wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F8868216676E8400BC5FEA /* cpc-wiki.png */; };
+		00F886851667776500BC5FEA /* about-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F886841667776500BC5FEA /* about-background.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0002F28816689C1D0080E188 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		000370C4165297EE00A47D64 /* bombjack.dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = bombjack.dsk; path = Disks/bombjack.dsk; sourceTree = "<group>"; };
+		00055AB3166BBFCF0051BDB0 /* CrocoDSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrocoDSApp.h; sourceTree = "<group>"; };
+		00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrocoDSApp.m; sourceTree = "<group>"; };
+		001DEEB0157E0A8200FC0B43 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		007ACB2413FBD17C0034363A /* KKDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDrawView.h; sourceTree = "<group>"; };
+		007ACB2513FBD17C0034363A /* KKDrawView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KKDrawView.mm; sourceTree = "<group>"; };
+		007ACB2913FBD2340034363A /* z80.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = z80.c; path = Classes/CrocoDS/z80.c; sourceTree = "<group>"; };
+		007ACB2A13FBD2340034363A /* plateform.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = plateform.c; path = Classes/CrocoDS/plateform.c; sourceTree = "<group>"; };
+		007ACB2B13FBD2340034363A /* upd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = upd.c; path = Classes/CrocoDS/upd.c; sourceTree = "<group>"; };
+		007ACB2C13FBD2340034363A /* cpc6128.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = cpc6128.bin; path = Classes/CrocoDS/cpc6128.bin; sourceTree = "<group>"; };
+		007ACB2D13FBD2340034363A /* rom_mods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = rom_mods.h; path = Classes/CrocoDS/rom_mods.h; sourceTree = "<group>"; };
+		007ACB2E13FBD2340034363A /* font.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = font.c; path = Classes/CrocoDS/font.c; sourceTree = "<group>"; };
+		007ACB2F13FBD2340034363A /* ppi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = ppi.c; path = Classes/CrocoDS/ppi.c; sourceTree = "<group>"; };
+		007ACB3013FBD2340034363A /* ziptool.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ziptool.cpp; path = Classes/CrocoDS/ziptool.cpp; sourceTree = "<group>"; };
+		007ACB3213FBD2340034363A /* crtc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crtc.c; path = Classes/CrocoDS/crtc.c; sourceTree = "<group>"; };
+		007ACB3313FBD2340034363A /* config.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = config.c; path = Classes/CrocoDS/config.c; sourceTree = "<group>"; };
+		007ACB3413FBD2340034363A /* vga.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = vga.c; path = Classes/CrocoDS/vga.c; sourceTree = "<group>"; };
+		007ACB3513FBD2340034363A /* snapshot.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = snapshot.c; path = Classes/CrocoDS/snapshot.c; sourceTree = "<group>"; };
+		007ACB3713FBD2340034363A /* autotype.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = autotype.c; path = Classes/CrocoDS/autotype.c; sourceTree = "<group>"; };
+		007ACB3913FBD2340034363A /* log.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = log.c; path = Classes/CrocoDS/log.c; sourceTree = "<group>"; };
+		007ACB3A13FBD2340034363A /* plateform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = plateform.h; path = Classes/CrocoDS/plateform.h; sourceTree = "<group>"; };
+		007ACB3C13FBD2340034363A /* multiface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = multiface.c; path = Classes/CrocoDS/multiface.c; sourceTree = "<group>"; };
+		007ACB3D13FBD2340034363A /* z80.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = z80.h; path = Classes/CrocoDS/z80.h; sourceTree = "<group>"; };
+		007ACB3E13FBD2340034363A /* cpcfont.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cpcfont.h; path = Classes/CrocoDS/cpcfont.h; sourceTree = "<group>"; };
+		007ACB3F13FBD2340034363A /* gestport.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gestport.c; path = Classes/CrocoDS/gestport.c; sourceTree = "<group>"; };
+		007ACB4013FBD2340034363A /* config.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = config.h; path = Classes/CrocoDS/config.h; sourceTree = "<group>"; };
+		007ACB4113FBD2340034363A /* types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = types.h; path = Classes/CrocoDS/types.h; sourceTree = "<group>"; };
+		007ACB4213FBD2340034363A /* crtc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crtc.h; path = Classes/CrocoDS/crtc.h; sourceTree = "<group>"; };
+		007ACB4313FBD2340034363A /* ppi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ppi.h; path = Classes/CrocoDS/ppi.h; sourceTree = "<group>"; };
+		007ACB4413FBD2340034363A /* upd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = upd.h; path = Classes/CrocoDS/upd.h; sourceTree = "<group>"; };
+		007ACB4513FBD2340034363A /* snapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = snapshot.h; path = Classes/CrocoDS/snapshot.h; sourceTree = "<group>"; };
+		007ACB4713FBD2340034363A /* vga.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = vga.h; path = Classes/CrocoDS/vga.h; sourceTree = "<group>"; };
+		007ACB4813FBD2340034363A /* log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = log.h; path = Classes/CrocoDS/log.h; sourceTree = "<group>"; };
+		007ACB4913FBD2340034363A /* sound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = sound.h; path = Classes/CrocoDS/sound.h; sourceTree = "<group>"; };
+		007ACB4A13FBD2340034363A /* multiface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = multiface.h; path = Classes/CrocoDS/multiface.h; sourceTree = "<group>"; };
+		007ACB4B13FBD2340034363A /* gestport.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = gestport.h; path = Classes/CrocoDS/gestport.h; sourceTree = "<group>"; };
+		007ACB4C13FBD2340034363A /* autotype.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = autotype.h; path = Classes/CrocoDS/autotype.h; sourceTree = "<group>"; };
+		007ACB4E13FBD2340034363A /* sound.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = sound.c; path = Classes/CrocoDS/sound.c; sourceTree = "<group>"; };
+		007ACB5013FBD2340034363A /* font.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = font.h; path = Classes/CrocoDS/font.h; sourceTree = "<group>"; };
+		007ACB5113FBD2340034363A /* ziptool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ziptool.h; path = Classes/CrocoDS/ziptool.h; sourceTree = "<group>"; };
+		007ACB6713FBD31C0034363A /* nds.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = nds.h; sourceTree = "<group>"; };
+		007ACB8213FBE32B0034363A /* romdisc.bin */ = {isa = PBXFileReference; lastKnownFileType = archive.macbinary; name = romdisc.bin; path = Classes/CrocoDS/romdisc.bin; sourceTree = "<group>"; };
+		007ACB8613FBE32D0034363A /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = adler32.c; sourceTree = "<group>"; };
+		007ACB8713FBE32D0034363A /* infblock.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infblock.c; sourceTree = "<group>"; };
+		007ACB8813FBE32D0034363A /* infblock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infblock.h; sourceTree = "<group>"; };
+		007ACB8913FBE32D0034363A /* infcodes.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infcodes.c; sourceTree = "<group>"; };
+		007ACB8A13FBE32D0034363A /* infcodes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infcodes.h; sourceTree = "<group>"; };
+		007ACB8B13FBE32D0034363A /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inffast.c; sourceTree = "<group>"; };
+		007ACB8C13FBE32D0034363A /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffast.h; sourceTree = "<group>"; };
+		007ACB8D13FBE32D0034363A /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inffixed.h; sourceTree = "<group>"; };
+		007ACB8E13FBE32D0034363A /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inflate.c; sourceTree = "<group>"; };
+		007ACB8F13FBE32D0034363A /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = inftrees.c; sourceTree = "<group>"; };
+		007ACB9013FBE32D0034363A /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = inftrees.h; sourceTree = "<group>"; };
+		007ACB9113FBE32D0034363A /* infutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = infutil.c; sourceTree = "<group>"; };
+		007ACB9213FBE32D0034363A /* infutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = infutil.h; sourceTree = "<group>"; };
+		007ACB9313FBE32D0034363A /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zconf.h; sourceTree = "<group>"; };
+		007ACB9413FBE32D0034363A /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
+		007ACB9513FBE32D0034363A /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
+		007ACB9613FBE32D0034363A /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
+		007ACBBF13FC0AD80034363A /* boulder.sna */ = {isa = PBXFileReference; lastKnownFileType = file; name = boulder.sna; path = ../Classes/CrocoDS/boulder.sna; sourceTree = "<group>"; };
+		0085BC6713F8F2A0002B438B /* ChoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoiceCell.h; path = Classes/Config/ChoiceCell.h; sourceTree = "<group>"; };
+		0085BC6813F8F2A0002B438B /* ChoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoiceCell.m; path = Classes/Config/ChoiceCell.m; sourceTree = "<group>"; };
+		0085BC6913F8F2A0002B438B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigViewController.h; path = Classes/Config/ConfigViewController.h; sourceTree = "<group>"; };
+		0085BC6A13F8F2A0002B438B /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigViewController.m; path = Classes/Config/ConfigViewController.m; sourceTree = "<group>"; };
+		0085BC6B13F8F2A0002B438B /* KTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTextFieldCell.h; path = Classes/Config/KTextFieldCell.h; sourceTree = "<group>"; };
+		0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTextFieldCell.m; path = Classes/Config/KTextFieldCell.m; sourceTree = "<group>"; };
+		0085BC6D13F8F2A0002B438B /* SelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionListViewController.h; path = Classes/Config/SelectionListViewController.h; sourceTree = "<group>"; };
+		0085BC6E13F8F2A0002B438B /* SelectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionListViewController.m; path = Classes/Config/SelectionListViewController.m; sourceTree = "<group>"; };
+		0085BC6F13F8F2A0002B438B /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwitchCell.h; path = Classes/Config/SwitchCell.h; sourceTree = "<group>"; };
+		0085BC7013F8F2A0002B438B /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwitchCell.m; path = Classes/Config/SwitchCell.m; sourceTree = "<group>"; };
+		0085BC8213F8FD45002B438B /* KDateFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDateFieldCell.h; path = Classes/Config/KDateFieldCell.h; sourceTree = "<group>"; };
+		0085BC8313F8FD45002B438B /* KDateFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDateFieldCell.m; path = Classes/Config/KDateFieldCell.m; sourceTree = "<group>"; };
+		0085BC8513F90FF0002B438B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		0085BC9013F926C2002B438B /* DatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerController.h; path = Classes/Config/DatePickerController.h; sourceTree = "<group>"; };
+		0085BC9113F926C3002B438B /* DatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatePickerController.m; path = Classes/Config/DatePickerController.m; sourceTree = "<group>"; };
+		009D823E164FFEB500FD90B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		009D8241165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk"; path = "Disks/Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk"; sourceTree = "<group>"; };
+		009D8242165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Croco Magneto (F) (19xx).dsk"; path = "Disks/Croco Magneto (F) (19xx).dsk"; sourceTree = "<group>"; };
+		009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asteroids (G) (19xx) (PD).dsk"; path = "Disks/Asteroids (G) (19xx) (PD).dsk"; sourceTree = "<group>"; };
+		009D8244165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Boulder Dash (UK) (1984).dsk"; path = "Disks/Boulder Dash (UK) (1984).dsk"; sourceTree = "<group>"; };
+		009D824916500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk"; path = "Disks/Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk"; sourceTree = "<group>"; };
+		009D824A16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk"; path = "Disks/Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk"; sourceTree = "<group>"; };
+		009D824B16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk"; path = "Disks/Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk"; sourceTree = "<group>"; };
+		009D824C16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk"; path = "Disks/Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk"; sourceTree = "<group>"; };
+		009D8255165026EE00FD90B7 /* iCadeState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
+		009D82571650292400FD90B7 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
+		009D82581650292400FD90B7 /* iCadeReaderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iCadeReaderView.m; sourceTree = "<group>"; };
+		009D825A1650DA4D00FD90B7 /* files.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = files.png; sourceTree = "<group>"; };
+		009D825B1650DA4D00FD90B7 /* files@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "files@2x.png"; sourceTree = "<group>"; };
+		009D825E1650DA7C00FD90B7 /* about.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = about.png; sourceTree = "<group>"; };
+		009D825F1650DA7C00FD90B7 /* about@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about@2x.png"; sourceTree = "<group>"; };
+		009D82621650DB7100FD90B7 /* gear.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gear.png; sourceTree = "<group>"; };
+		009D82631650DB7100FD90B7 /* gear@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "gear@2x.png"; sourceTree = "<group>"; };
+		00C9F0A614028F2500B0F226 /* key_up.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_up.png; sourceTree = "<group>"; };
+		00C9F0A914029CB800B0F226 /* key_a.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_a.png; sourceTree = "<group>"; };
+		00C9F0AA14029CB800B0F226 /* key_b.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_b.png; sourceTree = "<group>"; };
+		00C9F0AB14029CB800B0F226 /* key_down.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_down.png; sourceTree = "<group>"; };
+		00C9F0AC14029CB800B0F226 /* key_left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_left.png; sourceTree = "<group>"; };
+		00C9F0AD14029CB800B0F226 /* key_right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_right.png; sourceTree = "<group>"; };
+		00C9F0AE14029CB800B0F226 /* key_select.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_select.png; sourceTree = "<group>"; };
+		00C9F0AF14029CB800B0F226 /* key_start.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = key_start.png; sourceTree = "<group>"; };
+		00C9F0BB14038B2700B0F226 /* microlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = microlib.c; sourceTree = "<group>"; };
+		00C9F0BE14038B8E00B0F226 /* microlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = microlib.h; sourceTree = "<group>"; };
+		00C9F0BF1403963C00B0F226 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		00C9F0C31403A17300B0F226 /* emu2149.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = emu2149.c; sourceTree = "<group>"; };
+		00C9F0C41403A17300B0F226 /* emu2149.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = emu2149.h; sourceTree = "<group>"; };
+		00C9F0E01403BBB200B0F226 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		00C9F0E11403BBB300B0F226 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		00C9F0E31403BBD100B0F226 /* about.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = about.html; sourceTree = "<group>"; };
+		00C9F0E41403BBD200B0F226 /* biopocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "biopocket@2x.png"; sourceTree = "<group>"; };
+		00C9F0E51403BBD300B0F226 /* karaopocket.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = karaopocket.png; sourceTree = "<group>"; };
+		00C9F0E61403BBD400B0F226 /* karaopocket@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "karaopocket@2x.png"; sourceTree = "<group>"; };
+		00C9F0F11403CD0C00B0F226 /* MyCatalog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCatalog.h; sourceTree = "<group>"; };
+		00C9F0F21403CD0C00B0F226 /* MyCatalog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyCatalog.m; sourceTree = "<group>"; };
+		00D26C1D14018AE400855ACC /* MyKeyboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyKeyboard.h; sourceTree = "<group>"; };
+		00D26C1E14018AE400855ACC /* MyKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyKeyboard.m; sourceTree = "<group>"; };
+		00ED3B6A13E9E34A00AA663A /* CrocoDS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CrocoDS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		00ED3B6E13E9E34A00AA663A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		00ED3B7013E9E34A00AA663A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		00ED3B7213E9E34A00AA663A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		00ED3B7413E9E34A00AA663A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		00ED3B7613E9E34A00AA663A /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
+		00ED3B7A13E9E34A00AA663A /* CrocoDS-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CrocoDS-Info.plist"; sourceTree = "<group>"; };
+		00ED3B7C13E9E34A00AA663A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		00ED3B7E13E9E34A00AA663A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		00ED3B8013E9E34A00AA663A /* CrocoDS-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CrocoDS-Prefix.pch"; sourceTree = "<group>"; };
+		00ED3B8113E9E34A00AA663A /* CrocoDSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrocoDSAppDelegate.h; sourceTree = "<group>"; };
+		00ED3B8213E9E34A00AA663A /* CrocoDSAppDelegate.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CrocoDSAppDelegate.mm; sourceTree = "<group>"; };
+		00ED3B8E13E9E34A00AA663A /* CrocoDSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CrocoDSViewController.h; sourceTree = "<group>"; };
+		00ED3B8F13E9E34B00AA663A /* CrocoDSViewController.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = CrocoDSViewController.mm; sourceTree = "<group>"; };
+		00ED3B9F13E9E3DA00AA663A /* OGLView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = OGLView.mm; path = Classes/OGLView.mm; sourceTree = "<group>"; };
+		00ED3BA013E9E3DA00AA663A /* OGLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = OGLView.h; path = Classes/OGLView.h; sourceTree = "<group>"; };
+		00ED3BAB13E9E5DC00AA663A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		00ED3BAD13E9E5DC00AA663A /* SimpleFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimpleFont.png; sourceTree = "<group>"; };
+		00ED3BAE13E9E5DC00AA663A /* smallfont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallfont.png; sourceTree = "<group>"; };
+		00EFF52F166A3CA00070DA17 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "stuff/Icon-72.png"; sourceTree = "<group>"; };
+		00EFF531166A3CA00070DA17 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "stuff/Icon-Small-50.png"; sourceTree = "<group>"; };
+		00EFF532166A3CA00070DA17 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "stuff/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
+		00EFF533166A3CA00070DA17 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = stuff/Icon.png; sourceTree = "<group>"; };
+		00EFF53B166A3CEB0070DA17 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
+		00EFF53D166A3D150070DA17 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		00F8867F16676AA000BC5FEA /* cpcpower_236x48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cpcpower_236x48.gif; sourceTree = "<group>"; };
+		00F8868216676E8400BC5FEA /* cpc-wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cpc-wiki.png"; sourceTree = "<group>"; };
+		00F886841667776500BC5FEA /* about-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-background.png"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		00ED3B6713E9E34A00AA663A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0002F28916689C1D0080E188 /* StoreKit.framework in Frameworks */,
+				00C9F0C11403963C00B0F226 /* AudioToolbox.framework in Frameworks */,
+				0085BC8613F90FF1002B438B /* AddressBook.framework in Frameworks */,
+				00ED3B6F13E9E34A00AA663A /* UIKit.framework in Frameworks */,
+				00ED3B7113E9E34A00AA663A /* Foundation.framework in Frameworks */,
+				00ED3B7313E9E34A00AA663A /* CoreGraphics.framework in Frameworks */,
+				00ED3B7513E9E34A00AA663A /* QuartzCore.framework in Frameworks */,
+				00ED3B7713E9E34A00AA663A /* OpenGLES.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		007ACB2813FBD1870034363A /* CrocoDS */ = {
+			isa = PBXGroup;
+			children = (
+				007ACB8213FBE32B0034363A /* romdisc.bin */,
+				007ACB2C13FBD2340034363A /* cpc6128.bin */,
+				007ACB8513FBE32C0034363A /* zlib */,
+				007ACB3D13FBD2340034363A /* z80.h */,
+				007ACB2913FBD2340034363A /* z80.c */,
+				007ACB3A13FBD2340034363A /* plateform.h */,
+				007ACB2A13FBD2340034363A /* plateform.c */,
+				007ACB4413FBD2340034363A /* upd.h */,
+				007ACB2B13FBD2340034363A /* upd.c */,
+				007ACB5013FBD2340034363A /* font.h */,
+				007ACB2E13FBD2340034363A /* font.c */,
+				007ACB5113FBD2340034363A /* ziptool.h */,
+				007ACB3013FBD2340034363A /* ziptool.cpp */,
+				007ACB4313FBD2340034363A /* ppi.h */,
+				007ACB2F13FBD2340034363A /* ppi.c */,
+				007ACB4213FBD2340034363A /* crtc.h */,
+				007ACB3213FBD2340034363A /* crtc.c */,
+				007ACB4013FBD2340034363A /* config.h */,
+				007ACB3313FBD2340034363A /* config.c */,
+				007ACB4713FBD2340034363A /* vga.h */,
+				007ACB3413FBD2340034363A /* vga.c */,
+				007ACB4813FBD2340034363A /* log.h */,
+				007ACB3913FBD2340034363A /* log.c */,
+				007ACB4A13FBD2340034363A /* multiface.h */,
+				007ACB3C13FBD2340034363A /* multiface.c */,
+				007ACB4B13FBD2340034363A /* gestport.h */,
+				007ACB3F13FBD2340034363A /* gestport.c */,
+				007ACB4513FBD2340034363A /* snapshot.h */,
+				007ACB3513FBD2340034363A /* snapshot.c */,
+				007ACB4C13FBD2340034363A /* autotype.h */,
+				007ACB3713FBD2340034363A /* autotype.c */,
+				00C9F0C31403A17300B0F226 /* emu2149.c */,
+				00C9F0C41403A17300B0F226 /* emu2149.h */,
+				00C9F0BE14038B8E00B0F226 /* microlib.h */,
+				00C9F0BB14038B2700B0F226 /* microlib.c */,
+				007ACB4913FBD2340034363A /* sound.h */,
+				007ACB4E13FBD2340034363A /* sound.c */,
+				007ACB6713FBD31C0034363A /* nds.h */,
+				007ACB2D13FBD2340034363A /* rom_mods.h */,
+				007ACB3E13FBD2340034363A /* cpcfont.h */,
+				007ACB4113FBD2340034363A /* types.h */,
+			);
+			name = CrocoDS;
+			sourceTree = "<group>";
+		};
+		007ACB8513FBE32C0034363A /* zlib */ = {
+			isa = PBXGroup;
+			children = (
+				007ACB8613FBE32D0034363A /* adler32.c */,
+				007ACB8713FBE32D0034363A /* infblock.c */,
+				007ACB8813FBE32D0034363A /* infblock.h */,
+				007ACB8913FBE32D0034363A /* infcodes.c */,
+				007ACB8A13FBE32D0034363A /* infcodes.h */,
+				007ACB8B13FBE32D0034363A /* inffast.c */,
+				007ACB8C13FBE32D0034363A /* inffast.h */,
+				007ACB8D13FBE32D0034363A /* inffixed.h */,
+				007ACB8E13FBE32D0034363A /* inflate.c */,
+				007ACB8F13FBE32D0034363A /* inftrees.c */,
+				007ACB9013FBE32D0034363A /* inftrees.h */,
+				007ACB9113FBE32D0034363A /* infutil.c */,
+				007ACB9213FBE32D0034363A /* infutil.h */,
+				007ACB9313FBE32D0034363A /* zconf.h */,
+				007ACB9413FBE32D0034363A /* zlib.h */,
+				007ACB9513FBE32D0034363A /* zutil.c */,
+				007ACB9613FBE32D0034363A /* zutil.h */,
+			);
+			name = zlib;
+			path = Classes/CrocoDS/zlib;
+			sourceTree = "<group>";
+		};
+		0085BC6513F8F264002B438B /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				0085BC6913F8F2A0002B438B /* ConfigViewController.h */,
+				0085BC6A13F8F2A0002B438B /* ConfigViewController.m */,
+				0085BC9013F926C2002B438B /* DatePickerController.h */,
+				0085BC9113F926C3002B438B /* DatePickerController.m */,
+				0085BC8213F8FD45002B438B /* KDateFieldCell.h */,
+				0085BC8313F8FD45002B438B /* KDateFieldCell.m */,
+				0085BC6713F8F2A0002B438B /* ChoiceCell.h */,
+				0085BC6813F8F2A0002B438B /* ChoiceCell.m */,
+				0085BC6B13F8F2A0002B438B /* KTextFieldCell.h */,
+				0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */,
+				0085BC6D13F8F2A0002B438B /* SelectionListViewController.h */,
+				0085BC6E13F8F2A0002B438B /* SelectionListViewController.m */,
+				0085BC6F13F8F2A0002B438B /* SwitchCell.h */,
+				0085BC7013F8F2A0002B438B /* SwitchCell.m */,
+			);
+			name = Config;
+			sourceTree = "<group>";
+		};
+		009D8240165007AC00FD90B7 /* Disks */ = {
+			isa = PBXGroup;
+			children = (
+				000370C4165297EE00A47D64 /* bombjack.dsk */,
+				007ACBBF13FC0AD80034363A /* boulder.sna */,
+				009D824916500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk */,
+				009D824A16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk */,
+				009D824B16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk */,
+				009D824C16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk */,
+				009D8241165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk */,
+				009D8242165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk */,
+				009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */,
+				009D8244165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk */,
+			);
+			name = Disks;
+			sourceTree = "<group>";
+		};
+		009D8256165028FC00FD90B7 /* iCade */ = {
+			isa = PBXGroup;
+			children = (
+				009D82571650292400FD90B7 /* iCadeReaderView.h */,
+				009D82581650292400FD90B7 /* iCadeReaderView.m */,
+				009D8255165026EE00FD90B7 /* iCadeState.h */,
+			);
+			name = iCade;
+			sourceTree = "<group>";
+		};
+		00C9F0CA1403B92700B0F226 /* NavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				00C9F0F01403CC6300B0F226 /* Files */,
+				00C9F0EB1403BE3F00B0F226 /* About */,
+				0085BC6513F8F264002B438B /* Config */,
+			);
+			name = NavigationController;
+			sourceTree = "<group>";
+		};
+		00C9F0EB1403BE3F00B0F226 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				00C9F0E31403BBD100B0F226 /* about.html */,
+				00F886841667776500BC5FEA /* about-background.png */,
+				00F8867F16676AA000BC5FEA /* cpcpower_236x48.gif */,
+				00F8868216676E8400BC5FEA /* cpc-wiki.png */,
+				00C9F0E41403BBD200B0F226 /* biopocket@2x.png */,
+				00C9F0E51403BBD300B0F226 /* karaopocket.png */,
+				00C9F0E61403BBD400B0F226 /* karaopocket@2x.png */,
+				00C9F0E01403BBB200B0F226 /* AboutViewController.h */,
+				00C9F0E11403BBB300B0F226 /* AboutViewController.m */,
+			);
+			name = About;
+			sourceTree = "<group>";
+		};
+		00C9F0F01403CC6300B0F226 /* Files */ = {
+			isa = PBXGroup;
+			children = (
+				00C9F0F11403CD0C00B0F226 /* MyCatalog.h */,
+				00C9F0F21403CD0C00B0F226 /* MyCatalog.m */,
+			);
+			name = Files;
+			sourceTree = "<group>";
+		};
+		00ED3B5F13E9E34A00AA663A = {
+			isa = PBXGroup;
+			children = (
+				00EFF53D166A3D150070DA17 /* Icon-72@2x.png */,
+				00EFF53B166A3CEB0070DA17 /* Icon@2x.png */,
+				009D823E164FFEB500FD90B7 /* Default-568h@2x.png */,
+				00EFF52F166A3CA00070DA17 /* Icon-72.png */,
+				00EFF531166A3CA00070DA17 /* Icon-Small-50.png */,
+				00EFF532166A3CA00070DA17 /* Icon-Small-50@2x.png */,
+				00EFF533166A3CA00070DA17 /* Icon.png */,
+				00ED3B7813E9E34A00AA663A /* crocods */,
+				00ED3B6D13E9E34A00AA663A /* Frameworks */,
+				00ED3B6B13E9E34A00AA663A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		00ED3B6B13E9E34A00AA663A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				00ED3B6A13E9E34A00AA663A /* CrocoDS.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		00ED3B6D13E9E34A00AA663A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0002F28816689C1D0080E188 /* StoreKit.framework */,
+				00C9F0BF1403963C00B0F226 /* AudioToolbox.framework */,
+				0085BC8513F90FF0002B438B /* AddressBook.framework */,
+				00ED3B6E13E9E34A00AA663A /* UIKit.framework */,
+				00ED3B7013E9E34A00AA663A /* Foundation.framework */,
+				00ED3B7213E9E34A00AA663A /* CoreGraphics.framework */,
+				00ED3B7413E9E34A00AA663A /* QuartzCore.framework */,
+				00ED3B7613E9E34A00AA663A /* OpenGLES.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		00ED3B7813E9E34A00AA663A /* crocods */ = {
+			isa = PBXGroup;
+			children = (
+				00ED3BAA13E9E5DC00AA663A /* Resources */,
+				00ED3B9D13E9E3C400AA663A /* Classes */,
+				00ED3B8113E9E34A00AA663A /* CrocoDSAppDelegate.h */,
+				00ED3B8213E9E34A00AA663A /* CrocoDSAppDelegate.mm */,
+				00055AB3166BBFCF0051BDB0 /* CrocoDSApp.h */,
+				00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */,
+				00ED3B7913E9E34A00AA663A /* Supporting Files */,
+			);
+			path = crocods;
+			sourceTree = "<group>";
+		};
+		00ED3B7913E9E34A00AA663A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				00ED3B7A13E9E34A00AA663A /* CrocoDS-Info.plist */,
+				00ED3B7B13E9E34A00AA663A /* InfoPlist.strings */,
+				00ED3B7E13E9E34A00AA663A /* main.m */,
+				00ED3B8013E9E34A00AA663A /* CrocoDS-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		00ED3B9D13E9E3C400AA663A /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				009D8256165028FC00FD90B7 /* iCade */,
+				00C9F0CA1403B92700B0F226 /* NavigationController */,
+				007ACB2813FBD1870034363A /* CrocoDS */,
+				007ACB2413FBD17C0034363A /* KKDrawView.h */,
+				007ACB2513FBD17C0034363A /* KKDrawView.mm */,
+				00ED3BA013E9E3DA00AA663A /* OGLView.h */,
+				00ED3B9F13E9E3DA00AA663A /* OGLView.mm */,
+				00ED3B8E13E9E34A00AA663A /* CrocoDSViewController.h */,
+				00ED3B8F13E9E34B00AA663A /* CrocoDSViewController.mm */,
+				00D26C1D14018AE400855ACC /* MyKeyboard.h */,
+				00D26C1E14018AE400855ACC /* MyKeyboard.m */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		00ED3BAA13E9E5DC00AA663A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				009D8240165007AC00FD90B7 /* Disks */,
+				00C9F0A914029CB800B0F226 /* key_a.png */,
+				00C9F0AA14029CB800B0F226 /* key_b.png */,
+				00C9F0AB14029CB800B0F226 /* key_down.png */,
+				00C9F0AC14029CB800B0F226 /* key_left.png */,
+				00C9F0AD14029CB800B0F226 /* key_right.png */,
+				00C9F0AE14029CB800B0F226 /* key_select.png */,
+				00C9F0AF14029CB800B0F226 /* key_start.png */,
+				00C9F0A614028F2500B0F226 /* key_up.png */,
+				00ED3BAB13E9E5DC00AA663A /* background.png */,
+				001DEEB0157E0A8200FC0B43 /* background@2x.png */,
+				00ED3BAD13E9E5DC00AA663A /* SimpleFont.png */,
+				00ED3BAE13E9E5DC00AA663A /* smallfont.png */,
+				009D825E1650DA7C00FD90B7 /* about.png */,
+				009D825F1650DA7C00FD90B7 /* about@2x.png */,
+				009D82621650DB7100FD90B7 /* gear.png */,
+				009D82631650DB7100FD90B7 /* gear@2x.png */,
+				009D825A1650DA4D00FD90B7 /* files.png */,
+				009D825B1650DA4D00FD90B7 /* files@2x.png */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		00ED3B6913E9E34A00AA663A /* CrocoDS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 00ED3B9613E9E34B00AA663A /* Build configuration list for PBXNativeTarget "CrocoDS" */;
+			buildPhases = (
+				00ED3B6613E9E34A00AA663A /* Sources */,
+				00ED3B6713E9E34A00AA663A /* Frameworks */,
+				00ED3B6813E9E34A00AA663A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CrocoDS;
+			productName = biopocket;
+			productReference = 00ED3B6A13E9E34A00AA663A /* CrocoDS.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		00ED3B6113E9E34A00AA663A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "TEC Hainaut";
+			};
+			buildConfigurationList = 00ED3B6413E9E34A00AA663A /* Build configuration list for PBXProject "CrocoDS" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 00ED3B5F13E9E34A00AA663A;
+			productRefGroup = 00ED3B6B13E9E34A00AA663A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				00ED3B6913E9E34A00AA663A /* CrocoDS */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		00ED3B6813E9E34A00AA663A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED3B7D13E9E34A00AA663A /* InfoPlist.strings in Resources */,
+				00ED3BB013E9E5DC00AA663A /* background.png in Resources */,
+				00ED3BB213E9E5DC00AA663A /* SimpleFont.png in Resources */,
+				00ED3BB313E9E5DC00AA663A /* smallfont.png in Resources */,
+				007ACB5613FBD2340034363A /* cpc6128.bin in Resources */,
+				007ACB9713FBE32D0034363A /* romdisc.bin in Resources */,
+				007ACBC013FC0AD90034363A /* boulder.sna in Resources */,
+				00C9F0A714028F2500B0F226 /* key_up.png in Resources */,
+				00C9F0B014029CB800B0F226 /* key_a.png in Resources */,
+				00C9F0B114029CB800B0F226 /* key_b.png in Resources */,
+				00C9F0B214029CB800B0F226 /* key_down.png in Resources */,
+				00C9F0B314029CB800B0F226 /* key_left.png in Resources */,
+				00C9F0B414029CB800B0F226 /* key_right.png in Resources */,
+				00C9F0B514029CB800B0F226 /* key_select.png in Resources */,
+				00C9F0B614029CB800B0F226 /* key_start.png in Resources */,
+				00C9F0E71403BBD600B0F226 /* about.html in Resources */,
+				00C9F0E81403BBD600B0F226 /* biopocket@2x.png in Resources */,
+				00C9F0E91403BBD600B0F226 /* karaopocket.png in Resources */,
+				00C9F0EA1403BBD600B0F226 /* karaopocket@2x.png in Resources */,
+				001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */,
+				009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */,
+				009D8245165007C700FD90B7 /* Bubble Bobble 4 CPC (UK) (2011) (Version du 09-09-2012) (PD) [Original].dsk in Resources */,
+				009D8246165007C700FD90B7 /* Croco Magneto (F) (19xx).dsk in Resources */,
+				009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */,
+				009D8248165007C700FD90B7 /* Boulder Dash (UK) (1984).dsk in Resources */,
+				009D824D16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (Face J) (2012) (Pacman rom - Pac-Man - Midway 1980) (PD).dsk in Resources */,
+				009D824E16500F8000FD90B7 /* Pac-Man Emulator (UK) (128K) (2012) [Original] (PD).dsk in Resources */,
+				009D824F16500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face A) (1993) (Version Basic 1.1).dsk in Resources */,
+				009D825016500F8000FD90B7 /* Les Griffes De La Nuit (F) (128K) (Face B) (1993) (Version Basic 1.1).dsk in Resources */,
+				009D825C1650DA4D00FD90B7 /* files.png in Resources */,
+				009D825D1650DA4D00FD90B7 /* files@2x.png in Resources */,
+				009D82601650DA7C00FD90B7 /* about.png in Resources */,
+				009D82611650DA7C00FD90B7 /* about@2x.png in Resources */,
+				009D82641650DB7200FD90B7 /* gear.png in Resources */,
+				009D82651650DB7200FD90B7 /* gear@2x.png in Resources */,
+				000370C5165297EE00A47D64 /* bombjack.dsk in Resources */,
+				00F8868016676AA000BC5FEA /* cpcpower_236x48.gif in Resources */,
+				00F8868316676E8400BC5FEA /* cpc-wiki.png in Resources */,
+				00F886851667776500BC5FEA /* about-background.png in Resources */,
+				00EFF535166A3CA10070DA17 /* Icon-72.png in Resources */,
+				00EFF537166A3CA10070DA17 /* Icon-Small-50.png in Resources */,
+				00EFF538166A3CA10070DA17 /* Icon-Small-50@2x.png in Resources */,
+				00EFF539166A3CA10070DA17 /* Icon.png in Resources */,
+				00EFF53C166A3CEB0070DA17 /* Icon@2x.png in Resources */,
+				00EFF53E166A3D150070DA17 /* Icon-72@2x.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		00ED3B6613E9E34A00AA663A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				00ED3B7F13E9E34A00AA663A /* main.m in Sources */,
+				00ED3B8313E9E34A00AA663A /* CrocoDSAppDelegate.mm in Sources */,
+				00ED3B9013E9E34B00AA663A /* CrocoDSViewController.mm in Sources */,
+				00ED3BA113E9E3DA00AA663A /* OGLView.mm in Sources */,
+				0085BC7113F8F2A0002B438B /* ChoiceCell.m in Sources */,
+				0085BC7213F8F2A0002B438B /* ConfigViewController.m in Sources */,
+				0085BC7313F8F2A0002B438B /* KTextFieldCell.m in Sources */,
+				0085BC7413F8F2A0002B438B /* SelectionListViewController.m in Sources */,
+				0085BC7513F8F2A0002B438B /* SwitchCell.m in Sources */,
+				0085BC8413F8FD45002B438B /* KDateFieldCell.m in Sources */,
+				0085BC9813F926C9002B438B /* DatePickerController.m in Sources */,
+				007ACB2713FBD17C0034363A /* KKDrawView.mm in Sources */,
+				007ACB5313FBD2340034363A /* z80.c in Sources */,
+				007ACB5413FBD2340034363A /* plateform.c in Sources */,
+				007ACB5513FBD2340034363A /* upd.c in Sources */,
+				007ACB5713FBD2340034363A /* font.c in Sources */,
+				007ACB5813FBD2340034363A /* ppi.c in Sources */,
+				007ACB5913FBD2340034363A /* ziptool.cpp in Sources */,
+				007ACB5B13FBD2340034363A /* crtc.c in Sources */,
+				007ACB5C13FBD2340034363A /* config.c in Sources */,
+				007ACB5D13FBD2340034363A /* vga.c in Sources */,
+				007ACB5E13FBD2340034363A /* snapshot.c in Sources */,
+				007ACB6013FBD2340034363A /* autotype.c in Sources */,
+				007ACB6213FBD2340034363A /* log.c in Sources */,
+				007ACB6413FBD2340034363A /* multiface.c in Sources */,
+				007ACB6513FBD2340034363A /* gestport.c in Sources */,
+				007ACB6613FBD2340034363A /* sound.c in Sources */,
+				007ACB9813FBE32D0034363A /* adler32.c in Sources */,
+				007ACB9913FBE32D0034363A /* infblock.c in Sources */,
+				007ACB9A13FBE32D0034363A /* infcodes.c in Sources */,
+				007ACB9B13FBE32D0034363A /* inffast.c in Sources */,
+				007ACB9C13FBE32D0034363A /* inflate.c in Sources */,
+				007ACB9D13FBE32D0034363A /* inftrees.c in Sources */,
+				007ACB9E13FBE32D0034363A /* infutil.c in Sources */,
+				007ACB9F13FBE32D0034363A /* zutil.c in Sources */,
+				00D26C1F14018AE500855ACC /* MyKeyboard.m in Sources */,
+				00C9F0BC14038B2700B0F226 /* microlib.c in Sources */,
+				00C9F0C51403A17400B0F226 /* emu2149.c in Sources */,
+				00C9F0E21403BBB400B0F226 /* AboutViewController.m in Sources */,
+				00C9F0F31403CD0C00B0F226 /* MyCatalog.m in Sources */,
+				009D82591650292400FD90B7 /* iCadeReaderView.m in Sources */,
+				00055AB5166BBFCF0051BDB0 /* CrocoDSApp.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		00ED3B7B13E9E34A00AA663A /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				00ED3B7C13E9E34A00AA663A /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		00ED3B9413E9E34B00AA663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		00ED3B9513E9E34B00AA663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		00ED3B9713E9E34B00AA663A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "crocods/CrocoDS-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "crocods/CrocoDS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = CrocoDS;
+				PROVISIONING_PROFILE = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		00ED3B9813E9E34B00AA663A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "crocods/CrocoDS-Prefix.pch";
+				GCC_THUMB_SUPPORT = NO;
+				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				INFOPLIST_FILE = "crocods/CrocoDS-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				PRODUCT_NAME = CrocoDS;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		00ED3B6413E9E34A00AA663A /* Build configuration list for PBXProject "CrocoDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED3B9413E9E34B00AA663A /* Debug */,
+				00ED3B9513E9E34B00AA663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		00ED3B9613E9E34B00AA663A /* Build configuration list for PBXNativeTarget "CrocoDS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				00ED3B9713E9E34B00AA663A /* Debug */,
+				00ED3B9813E9E34B00AA663A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 00ED3B6113E9E34A00AA663A /* Project object */;
+}

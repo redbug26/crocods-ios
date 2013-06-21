@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "AutoType_SetString:autotype.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "AutoType">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[biopocketViewController touchesEnded:withEvent:]:biopocketViewController.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "ipc">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TraceLigne8B512:plateform.c">
+         <PersistentStrings>
+            <PersistentString
+               value = "MemBitmap-p">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OGLView CreateSurfaces:]:OGLView.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "activity">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "-[OGLView ProcessNextFrame:]:OGLView.mm">
+         <PersistentStrings>
+            <PersistentString
+               value = "day">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>
