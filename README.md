@@ -30,8 +30,11 @@ Copyright
 =========
 This Project is based upon the following work:
 
-- [Win-CPC](http://demoniak-contrib.forumactif.com "Win-CPC"): Copyright 2012 Ludovic Deplanque. All rights reserved.
-- GFX: Copyright 2007 Kukulcan
+- [Win-CPC](http://demoniak-contrib.forumactif.com "Win-CPC"): Amstrad CPC Emulator - Copyright 2012 Ludovic Deplanque.
+- [Caprice32](https://sourceforge.net/projects/caprice32/ "Caprice32"): Amstrad CPC Emulator - Copyright 1997-2004 Ulrich Doewich.
+- [iCade-iOS](https://github.com/scarnie/iCade-iOS "iCade-iOS"): iCADE, iControlPad and Gametel library - Copyright 2011 Stuart Carnie
+- GFX: Copyright 2007 Kukulcan.
+
 
 
 

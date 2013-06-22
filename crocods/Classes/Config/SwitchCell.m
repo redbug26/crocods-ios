@@ -1,5 +1,6 @@
-/*
- */
+//  Created by Miguel Vanhove on 31/10/10.
+//  Copyright 2010 Kyuran. All rights reserved.
+//
 
 #import "SwitchCell.h"
 
@@ -21,10 +22,6 @@
     return self;
 }
 
-- (void)dealloc {
-    [switchControl release];
-    [super dealloc];
-}
 
 - (void)layoutSubviews {
     [super layoutSubviews];

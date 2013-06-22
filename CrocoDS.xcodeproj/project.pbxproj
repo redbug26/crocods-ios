@@ -10,6 +10,7 @@
 		0002F28916689C1D0080E188 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0002F28816689C1D0080E188 /* StoreKit.framework */; };
 		00055AB5166BBFCF0051BDB0 /* CrocoDSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */; };
 		001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001DEEB0157E0A8200FC0B43 /* background@2x.png */; };
+		004438A31775A230009B9EA4 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 004438A21775A230009B9EA4 /* README.md */; };
 		007ACB2713FBD17C0034363A /* KKDrawView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2513FBD17C0034363A /* KKDrawView.mm */; };
 		007ACB5313FBD2340034363A /* z80.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2913FBD2340034363A /* z80.c */; };
 		007ACB5413FBD2340034363A /* plateform.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB2A13FBD2340034363A /* plateform.c */; };
@@ -36,14 +37,10 @@
 		007ACB9D13FBE32D0034363A /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB8F13FBE32D0034363A /* inftrees.c */; };
 		007ACB9E13FBE32D0034363A /* infutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB9113FBE32D0034363A /* infutil.c */; };
 		007ACB9F13FBE32D0034363A /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = 007ACB9513FBE32D0034363A /* zutil.c */; };
-		0085BC7113F8F2A0002B438B /* ChoiceCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6813F8F2A0002B438B /* ChoiceCell.m */; };
 		0085BC7213F8F2A0002B438B /* ConfigViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6A13F8F2A0002B438B /* ConfigViewController.m */; };
-		0085BC7313F8F2A0002B438B /* KTextFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */; };
-		0085BC7413F8F2A0002B438B /* SelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6E13F8F2A0002B438B /* SelectionListViewController.m */; };
+		0085BC7413F8F2A0002B438B /* KSelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6E13F8F2A0002B438B /* KSelectionListViewController.m */; };
 		0085BC7513F8F2A0002B438B /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC7013F8F2A0002B438B /* SwitchCell.m */; };
-		0085BC8413F8FD45002B438B /* KDateFieldCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC8313F8FD45002B438B /* KDateFieldCell.m */; };
 		0085BC8613F90FF1002B438B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085BC8513F90FF0002B438B /* AddressBook.framework */; };
-		0085BC9813F926C9002B438B /* DatePickerController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC9113F926C3002B438B /* DatePickerController.m */; };
 		009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D823E164FFEB500FD90B7 /* Default-568h@2x.png */; };
 		009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */; };
 		009D82591650292400FD90B7 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D82581650292400FD90B7 /* iCadeReaderView.m */; };
@@ -100,6 +97,7 @@
 		00055AB3166BBFCF0051BDB0 /* CrocoDSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrocoDSApp.h; sourceTree = "<group>"; };
 		00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrocoDSApp.m; sourceTree = "<group>"; };
 		001DEEB0157E0A8200FC0B43 /* background@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x.png"; sourceTree = "<group>"; };
+		004438A21775A230009B9EA4 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		007ACB2413FBD17C0034363A /* KKDrawView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KKDrawView.h; sourceTree = "<group>"; };
 		007ACB2513FBD17C0034363A /* KKDrawView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = KKDrawView.mm; sourceTree = "<group>"; };
 		007ACB2913FBD2340034363A /* z80.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = z80.c; path = Classes/CrocoDS/z80.c; sourceTree = "<group>"; };
@@ -155,21 +153,13 @@
 		007ACB9413FBE32D0034363A /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zlib.h; sourceTree = "<group>"; };
 		007ACB9513FBE32D0034363A /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zutil.c; sourceTree = "<group>"; };
 		007ACB9613FBE32D0034363A /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zutil.h; sourceTree = "<group>"; };
-		0085BC6713F8F2A0002B438B /* ChoiceCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ChoiceCell.h; path = Classes/Config/ChoiceCell.h; sourceTree = "<group>"; };
-		0085BC6813F8F2A0002B438B /* ChoiceCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ChoiceCell.m; path = Classes/Config/ChoiceCell.m; sourceTree = "<group>"; };
 		0085BC6913F8F2A0002B438B /* ConfigViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ConfigViewController.h; path = Classes/Config/ConfigViewController.h; sourceTree = "<group>"; };
 		0085BC6A13F8F2A0002B438B /* ConfigViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ConfigViewController.m; path = Classes/Config/ConfigViewController.m; sourceTree = "<group>"; };
-		0085BC6B13F8F2A0002B438B /* KTextFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KTextFieldCell.h; path = Classes/Config/KTextFieldCell.h; sourceTree = "<group>"; };
-		0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KTextFieldCell.m; path = Classes/Config/KTextFieldCell.m; sourceTree = "<group>"; };
-		0085BC6D13F8F2A0002B438B /* SelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SelectionListViewController.h; path = Classes/Config/SelectionListViewController.h; sourceTree = "<group>"; };
-		0085BC6E13F8F2A0002B438B /* SelectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SelectionListViewController.m; path = Classes/Config/SelectionListViewController.m; sourceTree = "<group>"; };
+		0085BC6D13F8F2A0002B438B /* KSelectionListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KSelectionListViewController.h; path = Classes/Config/KSelectionListViewController.h; sourceTree = "<group>"; };
+		0085BC6E13F8F2A0002B438B /* KSelectionListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KSelectionListViewController.m; path = Classes/Config/KSelectionListViewController.m; sourceTree = "<group>"; };
 		0085BC6F13F8F2A0002B438B /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwitchCell.h; path = Classes/Config/SwitchCell.h; sourceTree = "<group>"; };
 		0085BC7013F8F2A0002B438B /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwitchCell.m; path = Classes/Config/SwitchCell.m; sourceTree = "<group>"; };
-		0085BC8213F8FD45002B438B /* KDateFieldCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KDateFieldCell.h; path = Classes/Config/KDateFieldCell.h; sourceTree = "<group>"; };
-		0085BC8313F8FD45002B438B /* KDateFieldCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KDateFieldCell.m; path = Classes/Config/KDateFieldCell.m; sourceTree = "<group>"; };
 		0085BC8513F90FF0002B438B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		0085BC9013F926C2002B438B /* DatePickerController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DatePickerController.h; path = Classes/Config/DatePickerController.h; sourceTree = "<group>"; };
-		0085BC9113F926C3002B438B /* DatePickerController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = DatePickerController.m; path = Classes/Config/DatePickerController.m; sourceTree = "<group>"; };
 		009D823E164FFEB500FD90B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asteroids (G) (19xx) (PD).dsk"; path = "Disks/Asteroids (G) (19xx) (PD).dsk"; sourceTree = "<group>"; };
 		009D8255165026EE00FD90B7 /* iCadeState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
@@ -331,16 +321,8 @@
 			children = (
 				0085BC6913F8F2A0002B438B /* ConfigViewController.h */,
 				0085BC6A13F8F2A0002B438B /* ConfigViewController.m */,
-				0085BC9013F926C2002B438B /* DatePickerController.h */,
-				0085BC9113F926C3002B438B /* DatePickerController.m */,
-				0085BC8213F8FD45002B438B /* KDateFieldCell.h */,
-				0085BC8313F8FD45002B438B /* KDateFieldCell.m */,
-				0085BC6713F8F2A0002B438B /* ChoiceCell.h */,
-				0085BC6813F8F2A0002B438B /* ChoiceCell.m */,
-				0085BC6B13F8F2A0002B438B /* KTextFieldCell.h */,
-				0085BC6C13F8F2A0002B438B /* KTextFieldCell.m */,
-				0085BC6D13F8F2A0002B438B /* SelectionListViewController.h */,
-				0085BC6E13F8F2A0002B438B /* SelectionListViewController.m */,
+				0085BC6D13F8F2A0002B438B /* KSelectionListViewController.h */,
+				0085BC6E13F8F2A0002B438B /* KSelectionListViewController.m */,
 				0085BC6F13F8F2A0002B438B /* SwitchCell.h */,
 				0085BC7013F8F2A0002B438B /* SwitchCell.m */,
 			);
@@ -456,6 +438,7 @@
 		00ED3B7913E9E34A00AA663A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				004438A21775A230009B9EA4 /* README.md */,
 				00ED3B7A13E9E34A00AA663A /* CrocoDS-Info.plist */,
 				00ED3B7B13E9E34A00AA663A /* InfoPlist.strings */,
 				00ED3B7E13E9E34A00AA663A /* main.m */,
@@ -595,6 +578,7 @@
 				00EFF539166A3CA10070DA17 /* Icon.png in Resources */,
 				00EFF53C166A3CEB0070DA17 /* Icon@2x.png in Resources */,
 				00EFF53E166A3D150070DA17 /* Icon-72@2x.png in Resources */,
+				004438A31775A230009B9EA4 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -609,13 +593,9 @@
 				00ED3B8313E9E34A00AA663A /* CrocoDSAppDelegate.mm in Sources */,
 				00ED3B9013E9E34B00AA663A /* CrocoDSViewController.mm in Sources */,
 				00ED3BA113E9E3DA00AA663A /* OGLView.mm in Sources */,
-				0085BC7113F8F2A0002B438B /* ChoiceCell.m in Sources */,
 				0085BC7213F8F2A0002B438B /* ConfigViewController.m in Sources */,
-				0085BC7313F8F2A0002B438B /* KTextFieldCell.m in Sources */,
-				0085BC7413F8F2A0002B438B /* SelectionListViewController.m in Sources */,
+				0085BC7413F8F2A0002B438B /* KSelectionListViewController.m in Sources */,
 				0085BC7513F8F2A0002B438B /* SwitchCell.m in Sources */,
-				0085BC8413F8FD45002B438B /* KDateFieldCell.m in Sources */,
-				0085BC9813F926C9002B438B /* DatePickerController.m in Sources */,
 				007ACB2713FBD17C0034363A /* KKDrawView.mm in Sources */,
 				007ACB5313FBD2340034363A /* z80.c in Sources */,
 				007ACB5413FBD2340034363A /* plateform.c in Sources */,
@@ -710,6 +690,7 @@
 		00ED3B9713E9E34B00AA663A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "crocods/CrocoDS-Prefix.pch";
@@ -728,6 +709,7 @@
 		00ED3B9813E9E34B00AA663A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;

@@ -1,9 +1,8 @@
 //
 //  AboutViewController.h
-//  Doobs
 //
 //  Created by Miguel Vanhove on 31/10/10.
-//  Copyright 2010 TEC Hainaut. All rights reserved.
+//  Copyright 2010 Kyuran. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
@@ -31,8 +30,8 @@
 	NSURLRequest *_request;
 }
 
-@property (nonatomic, retain) UIWebView *webView;
-@property (nonatomic, readonly) UIToolbar *toolbar;
+@property (nonatomic, strong) UIWebView *webView;
+@property (weak, nonatomic, readonly) UIToolbar *toolbar;
 
 
 // Shows all available actions in a UIActionSheet that can be performed on the current page

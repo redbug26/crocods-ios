@@ -1,39 +1,26 @@
-/*
- * Copyright 2011 Jason Rush and John Flanagan. All rights reserved.
- *
- * This program is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * This program is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with this program.  If not, see <http://www.gnu.org/licenses/>.
- */
+//  Created by Miguel Vanhove on 31/10/10.
+//  Copyright 2010 Kyuran. All rights reserved.
+//
 
 #import <UIKit/UIKit.h>
 
-@protocol SelectionListViewControllerDelegate;
+@protocol KSelectionListViewControllerDelegate;
 
-@interface SelectionListViewController : UITableViewController {
+@interface KSelectionListViewController : UITableViewController {
     NSArray *items;
     NSString *subtitle;
     NSInteger selectedIndex;
-    id<SelectionListViewControllerDelegate> delegate;
+    id<KSelectionListViewControllerDelegate> delegate;
     id<NSObject> reference;
 }
 
-@property (nonatomic, retain) NSArray *items;
+@property (nonatomic, strong) NSArray *items;
 @property (nonatomic) NSInteger selectedIndex;
-@property (nonatomic, retain) id<SelectionListViewControllerDelegate> delegate;
-@property (nonatomic, retain) id<NSObject> reference;
-@property (nonatomic, retain) NSString *subtitle;
+@property (nonatomic, strong) id<KSelectionListViewControllerDelegate> delegate;
+@property (nonatomic, strong) id<NSObject> reference;
+@property (nonatomic, strong) NSString *subtitle;
 @end
 
-@protocol SelectionListViewControllerDelegate <NSObject>
-- (void)selectionListViewController:(SelectionListViewController*)controller selectedIndex:(NSInteger)selectedIndex withReference:(id<NSObject>)reference;
+@protocol KSelectionListViewControllerDelegate <NSObject>
+- (void)selectionListViewController:(KSelectionListViewController*)controller selectedIndex:(NSInteger)selectedIndex withReference:(id<NSObject>)reference;
 @end

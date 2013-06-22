@@ -1,9 +1,8 @@
 //
 //  AboutViewController.m
-//  Doobs
 //
 //  Created by Miguel Vanhove on 31/10/10.
-//  Copyright 2010 TEC Hainaut. All rights reserved.
+//  Copyright 2010 Kyuran. All rights reserved.
 //
 
 #import "AboutViewController.h"
@@ -59,7 +58,7 @@
     //build the URL and the request for the index.html file
     
     NSURL *baseURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] resourcePath]];   //  @"about.html"]];
-    NSURL *aURL = [[[NSURL alloc] initWithScheme:[baseURL scheme] host:[baseURL host] path:[[baseURL path] stringByAppendingPathComponent:@"about.html"]] autorelease];
+    NSURL *aURL = [[NSURL alloc] initWithScheme:[baseURL scheme] host:[baseURL host] path:[[baseURL path] stringByAppendingPathComponent:@"about.html"]];
     
     NSURLRequest *aRequest = [NSURLRequest requestWithURL:aURL];
     [aWebView loadRequest:aRequest];
@@ -70,7 +69,6 @@
     [scrollView addSubview:aWebView];
     
     self.view = scrollView;
-    [scrollView release];
     
     
     CGRect frame = self.view.bounds;
@@ -90,7 +88,6 @@
 	UIActivityIndicatorView *activityView = [[UIActivityIndicatorView alloc] initWithActivityIndicatorStyle:UIActivityIndicatorViewStyleWhite];
 	[activityView startAnimating];
 	_loadingButton = [[UIBarButtonItem alloc] initWithCustomView:activityView];
-	[activityView release];
 	
 	// Shows the next page, is disabled by default. Web view checks if it can go forward and disables the button if neccessary
 	_forwardButton = [[UIBarButtonItem alloc] initWithImage:[UIImage imageNamed:@"PWWebViewControllerArrowRight.png"] style:UIBarButtonItemStylePlain
@@ -153,7 +150,6 @@
 	// Assign tag, show it from toolbar and release it
 	actionSheet.tag = kPWWebViewControllerActionSheetTag;
 	[actionSheet showFromToolbar:_toolbar];
-	[actionSheet release];
 }
 
 - (void)reload
@@ -256,7 +252,6 @@
 											  cancelButtonTitle:NSLocalizedString(@"OK", nil)
 											  otherButtonTitles:nil];
 	[alertView show];
-	[alertView release];
 }
 
 
@@ -290,9 +285,6 @@
 
 #pragma mark -
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 
 @end

@@ -3,7 +3,7 @@
 //  crocods
 //
 //  Created by Miguel Vanhove on 23/08/11.
-//  Copyright 2011 TEC Hainaut. All rights reserved.
+//  Copyright 2011 Kyuran. All rights reserved.
 //
 
 #import "MyCatalog.h"
@@ -46,12 +46,11 @@
 	[searchDisplayController setSearchResultsDelegate:self];
 	[searchDisplayController setSearchResultsDataSource:self];
 	
-	[searchBar release];
 	
 	self.tableView.scrollEnabled = YES;
     
     
-    self.navigationItem.leftBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)] autorelease];
+    self.navigationItem.leftBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemCancel target:self action:@selector(cancel:)];
    
     UIView *loadingParam = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 320, 100)];
     // contentView.autoresizingMask = UIViewAutoresizingFlexibleWidth | UIViewAutoresizingFlexibleHeight;
@@ -66,7 +65,6 @@
     label1.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
     label1.text = @"Auto start";
     label1.backgroundColor = [UIColor clearColor];
-    [label1 release];
     
     
     // ----------------------------;
@@ -86,7 +84,6 @@
     switch1.on = YES;
     switch1.enabled = YES;
     switch1.onTintColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.92 alpha:1.0];
-    [switch1 release];
     
     
     // ----------------------------;
@@ -98,7 +95,6 @@
     label2.autoresizingMask = UIViewAutoresizingFlexibleRightMargin | UIViewAutoresizingFlexibleBottomMargin;
     label2.text = @"Reboot";
     label2.backgroundColor = [UIColor clearColor];
-    [label2 release];
     
     
     // ----------------------------;
@@ -119,14 +115,12 @@
     switch2.on = YES;
     switch2.enabled = YES;
     switch2.onTintColor = [UIColor colorWithRed:0.0 green:0.5 blue:0.92 alpha:1.0];
-    [switch2 release];
     
     autoStart=true;
     rebootWhenStart=true;
     
     
     self.tableView.tableFooterView = loadingParam;
-    [loadingParam release];
     
     self.title=@"Select file";
 }
@@ -171,12 +165,6 @@
 
 
 - (void)dealloc {
-    [indexLetters release];
-    [indexLettersAll release];
-	[_entries release];
-	[_qualifiedEntries release];
-	[searchDisplayController release];
-    [super dealloc];
     
     NSLog(@"dealoc pagelistcontroller");
 }
@@ -303,7 +291,7 @@
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     if (cell == nil) {
-        cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier] autorelease];
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
 		cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
 	}
     
@@ -428,7 +416,7 @@ NSInteger entrySort(NSString *e1, NSString * e2, void *context){
     NSArray* validExtensions = [NSArray arrayWithObjects:@"sna", @"dsk", nil];
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
-    NSString *DATA_DIR = [[(NSString *)[paths objectAtIndex:0] stringByAppendingPathComponent:@""] retain];
+    NSString *DATA_DIR = [(NSString *)[paths objectAtIndex:0] stringByAppendingPathComponent:@""];
     
     NSFileManager * fileManager = [NSFileManager defaultManager];
     NSArray * contents = [fileManager contentsOfDirectoryAtPath:DATA_DIR error:nil];
@@ -449,7 +437,6 @@ NSInteger entrySort(NSString *e1, NSString * e2, void *context){
         [self RebuildIndex:_entries];
     } 
     
-	[entries release];
 	[self.tableView reloadData];
 }
 @end

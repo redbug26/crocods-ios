@@ -41,8 +41,6 @@ assert(0); \
 
 - (id)initWithFrame:(CGRect)frame width:(int)width height:(int)height fps:(int)fps {
     
-    NSLog(@"init eagl %d", [self retainCount]);
-	
     if ((self = [super initWithFrame:frame])) {
         
         borderX=0;
@@ -59,14 +57,12 @@ assert(0); \
         
         
         isSGX = testContext ? YES : NO;
-        [testContext release];
         
         // isSGX n'est seulement valable que pour l'iphone edge ou 3G ou l'ipod touch 1 ou 2 gen (donc ecran de 320x480 maxi) 
         
         context = [[EAGLContext alloc] initWithAPI:kEAGLRenderingAPIOpenGLES1];
         
         if (!context || ![EAGLContext setCurrentContext:context]) {
-            [self release];
             return nil;
         }
         
@@ -148,8 +144,6 @@ assert(0); \
             pSurface = (UInt16*)malloc(dwSize);
         }
         
-        
-        NSLog(@"return init eagl %d", [self retainCount]);
         
         if ([self respondsToSelector:@selector(CreateSurfaces:)]) {
             [self CreateSurfaces:self];
@@ -337,9 +331,7 @@ assert(0); \
         [EAGLContext setCurrentContext:nil];
     }
     
-    [context release];
 	
-    [super dealloc];
     
     NSLog(@"******** dealloc kkdrawview");
 }

@@ -19,12 +19,12 @@ struct moment {
 @interface OGLView : KKDrawView <iCadeEventDelegate>
 {
     
-    crocodsViewController *parent;
+    crocodsViewController *__weak parent;
     
     int bx,by;
 }
 
-@property (nonatomic, assign) crocodsViewController *parent;
+@property (nonatomic, weak) crocodsViewController *parent;
 
 
 - (int)CreateSurfaces:(id)i;

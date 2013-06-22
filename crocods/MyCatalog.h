@@ -3,7 +3,7 @@
 //  crocods
 //
 //  Created by Miguel Vanhove on 23/08/11.
-//  Copyright 2011 TEC Hainaut. All rights reserved.
+//  Copyright 2011 Kyuran. All rights reserved.
 //
 
 @interface MyCatalog : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate> {
@@ -25,10 +25,10 @@
 }
 
 
-@property (nonatomic, retain) NSMutableArray * _entries;
-@property (nonatomic, retain) NSMutableArray * _qualifiedEntries;
-@property (nonatomic, retain) UISearchDisplayController *searchDisplayController;
-@property (nonatomic, retain) UIResponder *delegate;
+@property (nonatomic, strong) NSMutableArray * _entries;
+@property (nonatomic, strong) NSMutableArray * _qualifiedEntries;
+@property (nonatomic, strong) UISearchDisplayController *searchDisplayController;
+@property (nonatomic, strong) UIResponder *delegate;
 
 -(void)refreshData:(NSNotification *)notification;
 -(void)RebuildIndex:(NSMutableArray *)_entries0;

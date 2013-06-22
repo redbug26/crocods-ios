@@ -3,7 +3,7 @@
 //  crocods
 //
 //  Created by Miguel Vanhove on 17/08/11.
-//  Copyright 2011 TEC Hainaut. All rights reserved.
+//  Copyright 2011 Kyuran. All rights reserved.
 //
 
 #ifndef crocods_nds_h

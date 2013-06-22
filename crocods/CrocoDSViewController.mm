@@ -1,9 +1,8 @@
 //
 //  AboutViewController.m
-//  Doobs
 //
 //  Created by Miguel Vanhove on 31/10/10.
-//  Copyright 2010 TEC Hainaut. All rights reserved.
+//  Copyright 2010 Kyuran. All rights reserved.
 //
 
 #import "CrocoDSAppDelegate.h"
@@ -53,7 +52,6 @@
 
 -(void)requestDidFinish:(SKRequest *)request
 {
-    [request release];
 }
 
 -(void)request:(SKRequest *)request didFailWithError:(NSError *)error
@@ -177,11 +175,9 @@
     
     doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissSettingsView)];
     catalogViewController.navigationItem.rightBarButtonItem = doneButton;
-    [doneButton release];
     
     catalogViewController.delegate = (UIResponder*)self;
     
-    [catalogViewController release];
     
     // Config
     
@@ -191,9 +187,7 @@
     
     doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissSettingsView)];
     settingsViewController.navigationItem.rightBarButtonItem = doneButton;
-    [doneButton release];
     
-    [settingsViewController release];
     
     
     //--- About
@@ -203,9 +197,7 @@
     
     doneButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissSettingsView)];
     aboutView.navigationItem.rightBarButtonItem = doneButton;
-    [doneButton release];
     
-    [aboutView release];
     
     // -- Init
     
@@ -215,10 +207,7 @@
     
     [self presentModalViewController:myNavigationController animated:YES];
     
-    [settingsNavController release];
-    [aboutNavController release];
     
-    [myNavigationController release];
     
     /*
      
@@ -507,18 +496,6 @@
 }
 
 
-- (void)dealloc {
-    [key_start release];
-    [key_select release];
-    [key_b release];
-    [key_a release];
-    [key_right release];
-    [key_left release];
-    [key_up release];
-    [key_down release];
-    
-    [super dealloc];
-}
 
 
 

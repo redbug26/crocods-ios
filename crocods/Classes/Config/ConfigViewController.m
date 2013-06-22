@@ -1,13 +1,11 @@
 //
 //  AboutViewController.m
-//  Doobs
 //
 //  Created by Miguel Vanhove on 31/10/10.
-//  Copyright 2010 TEC Hainaut. All rights reserved.
+//  Copyright 2010 Kyuran. All rights reserved.
 //
 
 #import "ConfigViewController.h"
-#import "DatePickerController.h"
 
 #import "CrocoDSAppDelegate.h"
 
@@ -117,9 +115,6 @@ enum {
 }
 
 
-- (void)dealloc {
-    [super dealloc];
-}
 
 - (void)toggleDropbox:(id)sender {
     [self SaveSettings];
@@ -163,7 +158,7 @@ enum {
     }
 }
 
-- (void)selectionListViewController:(SelectionListViewController *)controller selectedIndex:(NSInteger)selectedIndex withReference:(id<NSObject>)reference {
+- (void)selectionListViewController:(KSelectionListViewController *)controller selectedIndex:(NSInteger)selectedIndex withReference:(id<NSObject>)reference {
     NSIndexPath *indexPath = (NSIndexPath*)reference;
     
     if (indexPath.section == SECTION_KEYBOARD) {
