@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0002607517DA812800EB2E84 /* background@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0002607317DA812800EB2E84 /* background@2x~ipad.png */; };
+		0002607617DA812800EB2E84 /* background~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 0002607417DA812800EB2E84 /* background~ipad.png */; };
+		0002607E17DA829D00EB2E84 /* Cheops (F) (1986) [Amstradebdo Et PC].dsk in Resources */ = {isa = PBXBuildFile; fileRef = 0002607D17DA829D00EB2E84 /* Cheops (F) (1986) [Amstradebdo Et PC].dsk */; };
 		0002F28916689C1D0080E188 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0002F28816689C1D0080E188 /* StoreKit.framework */; };
 		00055AB5166BBFCF0051BDB0 /* CrocoDSApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */; };
 		001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 001DEEB0157E0A8200FC0B43 /* background@2x.png */; };
@@ -93,6 +96,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0002607317DA812800EB2E84 /* background@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background@2x~ipad.png"; sourceTree = "<group>"; };
+		0002607417DA812800EB2E84 /* background~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "background~ipad.png"; sourceTree = "<group>"; };
+		0002607D17DA829D00EB2E84 /* Cheops (F) (1986) [Amstradebdo Et PC].dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Cheops (F) (1986) [Amstradebdo Et PC].dsk"; path = "Disks/Cheops (F) (1986) [Amstradebdo Et PC].dsk"; sourceTree = "<group>"; };
 		0002F28816689C1D0080E188 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		00055AB3166BBFCF0051BDB0 /* CrocoDSApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrocoDSApp.h; sourceTree = "<group>"; };
 		00055AB4166BBFCF0051BDB0 /* CrocoDSApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CrocoDSApp.m; sourceTree = "<group>"; };
@@ -332,6 +338,7 @@
 		009D8240165007AC00FD90B7 /* Disks */ = {
 			isa = PBXGroup;
 			children = (
+				0002607D17DA829D00EB2E84 /* Cheops (F) (1986) [Amstradebdo Et PC].dsk */,
 				009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */,
 			);
 			name = Disks;
@@ -479,6 +486,8 @@
 				00C9F0A614028F2500B0F226 /* key_up.png */,
 				00ED3BAB13E9E5DC00AA663A /* background.png */,
 				001DEEB0157E0A8200FC0B43 /* background@2x.png */,
+				0002607417DA812800EB2E84 /* background~ipad.png */,
+				0002607317DA812800EB2E84 /* background@2x~ipad.png */,
 				00ED3BAD13E9E5DC00AA663A /* SimpleFont.png */,
 				00ED3BAE13E9E5DC00AA663A /* smallfont.png */,
 				009D825E1650DA7C00FD90B7 /* about.png */,
@@ -501,6 +510,7 @@
 				00ED3B6613E9E34A00AA663A /* Sources */,
 				00ED3B6713E9E34A00AA663A /* Frameworks */,
 				00ED3B6813E9E34A00AA663A /* Resources */,
+				00FC35B7179C550900E815AB /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -579,10 +589,29 @@
 				00EFF53C166A3CEB0070DA17 /* Icon@2x.png in Resources */,
 				00EFF53E166A3D150070DA17 /* Icon-72@2x.png in Resources */,
 				004438A31775A230009B9EA4 /* README.md in Resources */,
+				0002607517DA812800EB2E84 /* background@2x~ipad.png in Resources */,
+				0002607617DA812800EB2E84 /* background~ipad.png in Resources */,
+				0002607E17DA829D00EB2E84 /* Cheops (F) (1986) [Amstradebdo Et PC].dsk in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		00FC35B7179C550900E815AB /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		00ED3B6613E9E34A00AA663A /* Sources */ = {

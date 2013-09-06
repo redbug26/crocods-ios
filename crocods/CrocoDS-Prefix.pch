@@ -12,3 +12,8 @@
     #import <UIKit/UIKit.h>
     #import <Foundation/Foundation.h>
 #endif
+
+
+#define GENERATE_PRAGMA(x) _Pragma(#x)
+#define FIXME(x) GENERATE_PRAGMA(message("[FIXME] " #x))
+#define TODO(x) GENERATE_PRAGMA(message("[TODO] " #x))

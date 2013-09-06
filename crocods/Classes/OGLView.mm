@@ -75,9 +75,8 @@ long nds_GetTicks(void) {
         framebuf[0]=0;
         
         
-        do
-	{
-            tz80-=nds_GetTicks();
+        do {
+            tz80-=nds_GetTicks();  // TODO("replace this function")
             ExecInstZ80();    // Fais tourner le CPU tant CptInstr < CYCLELIGNE
             tz80+=nds_GetTicks();
             
