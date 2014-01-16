@@ -34,6 +34,9 @@ This Project is based upon the following work:
 - [Caprice32](https://sourceforge.net/projects/caprice32/ "Caprice32"): Amstrad CPC Emulator - Copyright 1997-2004 Ulrich Doewich.
 - [iCade-iOS](https://github.com/scarnie/iCade-iOS "iCade-iOS"): iCADE, iControlPad and Gametel library - Copyright 2011 Stuart Carnie
 - GFX: Copyright 2007 Kukulcan.
+- GFX (keyboard): Copyright 2013 Jean-Jacques Cortes
+
+
 
 
 

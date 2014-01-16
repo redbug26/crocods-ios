@@ -37,7 +37,6 @@ enum {
     [super viewDidLoad];
     
     iCade = [[SwitchCell alloc] initWithLabel:@"iCade" reuseIdentifier:nil];
-    [iCade setEnabled:false];
     
     externalKeyboard = [[SwitchCell alloc] initWithLabel:@"External Keyboard" reuseIdentifier:nil];
 
@@ -190,7 +189,8 @@ enum {
 
 - (NSString*)tableView:(UITableView *)tableView titleForFooterInSection:(NSInteger)section {
     if (section==SECTION_KEYBOARD) {
-        return [NSString stringWithFormat:@"iCade is only available in Pro Version"];
+        return [NSString stringWithFormat:@"CrocoDS v%@", [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleVersion"]];
+//        return [NSString stringWithFormat:@"iCade is only available in Pro Version"];
     }
     /*
     if (section==SECTION_KEYBOARD) {

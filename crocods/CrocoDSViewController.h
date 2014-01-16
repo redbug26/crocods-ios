@@ -7,15 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <StoreKit/StoreKit.h>
 
 #import "OGLView.h"
 #import "MyKeyboard.h"
 
 @class CADisplayLink;
 
+@class GCController;
 
-@interface crocodsViewController : UIViewController  <SKProductsRequestDelegate> {
+@interface crocodsViewController : UIViewController {
     OGLView *m_oglView;
     CADisplayLink* m_displayLink;
     
@@ -36,6 +36,7 @@
     UIImageView *key_select;
     UIImageView *key_start;
     
+    GCController *myController;
 }
 
 

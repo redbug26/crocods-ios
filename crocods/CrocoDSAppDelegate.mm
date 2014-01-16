@@ -11,8 +11,6 @@
 
 @implementation crocodsAppDelegate
 
-@synthesize isPro;
-
 - (void)setUseExternalKeyboard:(bool)useExternalKeyboard {
     [[NSUserDefaults standardUserDefaults] setBool:useExternalKeyboard forKey:@"useExternalKeyboard"];
     _useExternalKeyboard=useExternalKeyboard;
@@ -54,9 +52,8 @@
     
 //    int timeout=[[NSUserDefaults standardUserDefaults] integerForKey:@"timeout"];
 
-    //    isPro=false;
-    isPro=true;
 
+    
     
     [[UIApplication sharedApplication] setStatusBarHidden:YES withAnimation:nil];
 

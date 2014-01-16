@@ -44,7 +44,6 @@
 		0085BC7413F8F2A0002B438B /* KSelectionListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC6E13F8F2A0002B438B /* KSelectionListViewController.m */; };
 		0085BC7513F8F2A0002B438B /* SwitchCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0085BC7013F8F2A0002B438B /* SwitchCell.m */; };
 		0085BC8613F90FF1002B438B /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0085BC8513F90FF0002B438B /* AddressBook.framework */; };
-		009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D823E164FFEB500FD90B7 /* Default-568h@2x.png */; };
 		009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */ = {isa = PBXBuildFile; fileRef = 009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */; };
 		009D82591650292400FD90B7 /* iCadeReaderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 009D82581650292400FD90B7 /* iCadeReaderView.m */; };
 		009D825C1650DA4D00FD90B7 /* files.png in Resources */ = {isa = PBXBuildFile; fileRef = 009D825A1650DA4D00FD90B7 /* files.png */; };
@@ -84,15 +83,11 @@
 		00ED3BB013E9E5DC00AA663A /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3BAB13E9E5DC00AA663A /* background.png */; };
 		00ED3BB213E9E5DC00AA663A /* SimpleFont.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3BAD13E9E5DC00AA663A /* SimpleFont.png */; };
 		00ED3BB313E9E5DC00AA663A /* smallfont.png in Resources */ = {isa = PBXBuildFile; fileRef = 00ED3BAE13E9E5DC00AA663A /* smallfont.png */; };
-		00EFF535166A3CA10070DA17 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF52F166A3CA00070DA17 /* Icon-72.png */; };
-		00EFF537166A3CA10070DA17 /* Icon-Small-50.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF531166A3CA00070DA17 /* Icon-Small-50.png */; };
-		00EFF538166A3CA10070DA17 /* Icon-Small-50@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF532166A3CA00070DA17 /* Icon-Small-50@2x.png */; };
-		00EFF539166A3CA10070DA17 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF533166A3CA00070DA17 /* Icon.png */; };
-		00EFF53C166A3CEB0070DA17 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF53B166A3CEB0070DA17 /* Icon@2x.png */; };
-		00EFF53E166A3D150070DA17 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 00EFF53D166A3D150070DA17 /* Icon-72@2x.png */; };
 		00F8868016676AA000BC5FEA /* cpcpower_236x48.gif in Resources */ = {isa = PBXBuildFile; fileRef = 00F8867F16676AA000BC5FEA /* cpcpower_236x48.gif */; };
 		00F8868316676E8400BC5FEA /* cpc-wiki.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F8868216676E8400BC5FEA /* cpc-wiki.png */; };
 		00F886851667776500BC5FEA /* about-background.png in Resources */ = {isa = PBXBuildFile; fileRef = 00F886841667776500BC5FEA /* about-background.png */; };
+		1338B155183B6922008653A7 /* GameController.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1338B154183B6922008653A7 /* GameController.framework */; };
+		1338B157183B692C008653A7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1338B156183B692C008653A7 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -166,7 +161,6 @@
 		0085BC6F13F8F2A0002B438B /* SwitchCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SwitchCell.h; path = Classes/Config/SwitchCell.h; sourceTree = "<group>"; };
 		0085BC7013F8F2A0002B438B /* SwitchCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SwitchCell.m; path = Classes/Config/SwitchCell.m; sourceTree = "<group>"; };
 		0085BC8513F90FF0002B438B /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
-		009D823E164FFEB500FD90B7 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		009D8243165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Asteroids (G) (19xx) (PD).dsk"; path = "Disks/Asteroids (G) (19xx) (PD).dsk"; sourceTree = "<group>"; };
 		009D8255165026EE00FD90B7 /* iCadeState.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iCadeState.h; sourceTree = "<group>"; };
 		009D82571650292400FD90B7 /* iCadeReaderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iCadeReaderView.h; sourceTree = "<group>"; };
@@ -219,15 +213,11 @@
 		00ED3BAB13E9E5DC00AA663A /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
 		00ED3BAD13E9E5DC00AA663A /* SimpleFont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = SimpleFont.png; sourceTree = "<group>"; };
 		00ED3BAE13E9E5DC00AA663A /* smallfont.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = smallfont.png; sourceTree = "<group>"; };
-		00EFF52F166A3CA00070DA17 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-72.png"; path = "stuff/Icon-72.png"; sourceTree = "<group>"; };
-		00EFF531166A3CA00070DA17 /* Icon-Small-50.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50.png"; path = "stuff/Icon-Small-50.png"; sourceTree = "<group>"; };
-		00EFF532166A3CA00070DA17 /* Icon-Small-50@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Icon-Small-50@2x.png"; path = "stuff/Icon-Small-50@2x.png"; sourceTree = "<group>"; };
-		00EFF533166A3CA00070DA17 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon.png; path = stuff/Icon.png; sourceTree = "<group>"; };
-		00EFF53B166A3CEB0070DA17 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
-		00EFF53D166A3D150070DA17 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
 		00F8867F16676AA000BC5FEA /* cpcpower_236x48.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = cpcpower_236x48.gif; sourceTree = "<group>"; };
 		00F8868216676E8400BC5FEA /* cpc-wiki.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "cpc-wiki.png"; sourceTree = "<group>"; };
 		00F886841667776500BC5FEA /* about-background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "about-background.png"; sourceTree = "<group>"; };
+		1338B154183B6922008653A7 /* GameController.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameController.framework; path = System/Library/Frameworks/GameController.framework; sourceTree = SDKROOT; };
+		1338B156183B692C008653A7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = CrocoDS/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +225,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1338B155183B6922008653A7 /* GameController.framework in Frameworks */,
 				0002F28916689C1D0080E188 /* StoreKit.framework in Frameworks */,
 				00C9F0C11403963C00B0F226 /* AudioToolbox.framework in Frameworks */,
 				0085BC8613F90FF1002B438B /* AddressBook.framework in Frameworks */,
@@ -392,13 +383,7 @@
 		00ED3B5F13E9E34A00AA663A = {
 			isa = PBXGroup;
 			children = (
-				00EFF53D166A3D150070DA17 /* Icon-72@2x.png */,
-				00EFF53B166A3CEB0070DA17 /* Icon@2x.png */,
-				009D823E164FFEB500FD90B7 /* Default-568h@2x.png */,
-				00EFF52F166A3CA00070DA17 /* Icon-72.png */,
-				00EFF531166A3CA00070DA17 /* Icon-Small-50.png */,
-				00EFF532166A3CA00070DA17 /* Icon-Small-50@2x.png */,
-				00EFF533166A3CA00070DA17 /* Icon.png */,
+				1338B156183B692C008653A7 /* Images.xcassets */,
 				00ED3B7813E9E34A00AA663A /* crocods */,
 				00ED3B6D13E9E34A00AA663A /* Frameworks */,
 				00ED3B6B13E9E34A00AA663A /* Products */,
@@ -416,6 +401,7 @@
 		00ED3B6D13E9E34A00AA663A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1338B154183B6922008653A7 /* GameController.framework */,
 				0002F28816689C1D0080E188 /* StoreKit.framework */,
 				00C9F0BF1403963C00B0F226 /* AudioToolbox.framework */,
 				0085BC8513F90FF0002B438B /* AddressBook.framework */,
@@ -527,7 +513,7 @@
 		00ED3B6113E9E34A00AA663A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastUpgradeCheck = 0500;
 				ORGANIZATIONNAME = "TEC Hainaut";
 			};
 			buildConfigurationList = 00ED3B6413E9E34A00AA663A /* Build configuration list for PBXProject "CrocoDS" */;
@@ -571,7 +557,6 @@
 				00C9F0E91403BBD600B0F226 /* karaopocket.png in Resources */,
 				00C9F0EA1403BBD600B0F226 /* karaopocket@2x.png in Resources */,
 				001DEEB1157E0A8200FC0B43 /* background@2x.png in Resources */,
-				009D823F164FFEB500FD90B7 /* Default-568h@2x.png in Resources */,
 				009D8247165007C700FD90B7 /* Asteroids (G) (19xx) (PD).dsk in Resources */,
 				009D825C1650DA4D00FD90B7 /* files.png in Resources */,
 				009D825D1650DA4D00FD90B7 /* files@2x.png in Resources */,
@@ -582,12 +567,7 @@
 				00F8868016676AA000BC5FEA /* cpcpower_236x48.gif in Resources */,
 				00F8868316676E8400BC5FEA /* cpc-wiki.png in Resources */,
 				00F886851667776500BC5FEA /* about-background.png in Resources */,
-				00EFF535166A3CA10070DA17 /* Icon-72.png in Resources */,
-				00EFF537166A3CA10070DA17 /* Icon-Small-50.png in Resources */,
-				00EFF538166A3CA10070DA17 /* Icon-Small-50@2x.png in Resources */,
-				00EFF539166A3CA10070DA17 /* Icon.png in Resources */,
-				00EFF53C166A3CEB0070DA17 /* Icon@2x.png in Resources */,
-				00EFF53E166A3D150070DA17 /* Icon-72@2x.png in Resources */,
+				1338B157183B692C008653A7 /* Images.xcassets in Resources */,
 				004438A31775A230009B9EA4 /* README.md in Resources */,
 				0002607517DA812800EB2E84 /* background@2x~ipad.png in Resources */,
 				0002607617DA812800EB2E84 /* background~ipad.png in Resources */,
@@ -677,7 +657,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -693,6 +672,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 3.1;
+				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -701,7 +681,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -719,6 +698,8 @@
 		00ED3B9713E9E34B00AA663A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -727,7 +708,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "crocods/CrocoDS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = CrocoDS;
 				PROVISIONING_PROFILE = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -738,6 +719,8 @@
 		00ED3B9813E9E34B00AA663A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CLANG_ENABLE_OBJC_ARC = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
@@ -747,7 +730,7 @@
 				"GCC_THUMB_SUPPORT[arch=armv6]" = "";
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				INFOPLIST_FILE = "crocods/CrocoDS-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 5.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = CrocoDS;
 				PROVISIONING_PROFILE = "";
 				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "";

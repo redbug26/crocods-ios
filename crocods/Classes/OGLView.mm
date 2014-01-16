@@ -233,7 +233,7 @@ long nds_GetTicks(void) {
 
 - (void)buttonDown:(iCadeState)button {
     
-    if (([crocodsAppDelegate delegate].isPro) & ([crocodsAppDelegate delegate].useIcade)) {
+    if ([crocodsAppDelegate delegate].useIcade) {
         
         switch (button) {
             case iCadeButtonA:
@@ -269,7 +269,7 @@ long nds_GetTicks(void) {
 
 - (void)buttonUp:(iCadeState)button {
     
-    if (([crocodsAppDelegate delegate].isPro) & ([crocodsAppDelegate delegate].useIcade)) {
+    if  ([crocodsAppDelegate delegate].useIcade) {
         switch (button) {
             case iCadeButtonA:
                 ipc.keys_pressed &= (~KEY_A);

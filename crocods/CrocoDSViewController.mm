@@ -21,6 +21,9 @@
 #import "AboutViewController.h"
 #import "ConfigViewController.h"
 #import "MyCatalog.h"
+
+#import <GameController/GameController.h>
+
     
 #define RAYON 20
 
@@ -39,36 +42,8 @@
 }
 
 
--(void)productsRequest:(SKProductsRequest *)request didReceiveResponse:(SKProductsResponse *)response
-{
-    NSLog(@"response: %@", response.products);
-    NSLog(@"invalid: %@", response.invalidProductIdentifiers);
-
-    NSLog(@"response: %@", response); 
-
-    NSLog(@"response: %@", request);
-
-}
-
--(void)requestDidFinish:(SKRequest *)request
-{
-}
-
--(void)request:(SKRequest *)request didFailWithError:(NSError *)error
-{
-    NSLog(@"Failed to connect with error: %@", [error localizedDescription]);
-}
-
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    
-    
-    SKProductsRequest *request = [[SKProductsRequest alloc] initWithProductIdentifiers:[NSSet setWithArray:@[@"be.kyuran.crocods.pro"]]];
-    request.delegate = self;
-    [request start];
     
     // Copy all DSK to Documents directory
     
@@ -155,6 +130,98 @@
     key_start.frame=CGRectMake( w * 5,  h * 0, 48,48);
     key_start.autoresizingMask = UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleBottomMargin;
     [m_oglView addSubview:key_start];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(setupControllers:) name:GCControllerDidConnectNotification object:nil];
+    
+    [GCController startWirelessControllerDiscoveryWithCompletionHandler:nil];
+    
+    [self setupControllers];
+}
+
+- (void)viewDidUnload {
+    [self viewDidUnload];
+    
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:GCControllerDidConnectNotification object:nil];
+
+}
+
+- (void)setupControllers {
+    for (GCController *controller in [GCController controllers]) {
+        myController = controller;
+        
+        NSInteger playerIndex = controller.playerIndex;
+        if (playerIndex != GCControllerPlayerIndexUnset) {
+            continue;
+        }
+        
+        myController.gamepad.valueChangedHandler = ^(GCGamepad *gamepad, GCControllerElement *element){
+            if (gamepad.dpad.left == element) {
+                if (gamepad.dpad.left.isPressed) {
+                    ipc.keys_pressed |= KEY_LEFT;
+                } else {
+                    ipc.keys_pressed &= (~KEY_LEFT);
+                }
+            }
+            if (gamepad.dpad.right == element) {
+                if (gamepad.dpad.right.isPressed) {
+                    ipc.keys_pressed |= KEY_RIGHT;
+                } else {
+                    ipc.keys_pressed &= (~KEY_RIGHT);
+                }
+            }
+            if (gamepad.dpad.up == element) {
+                if (gamepad.dpad.up.isPressed) {
+                    ipc.keys_pressed |= KEY_UP;
+                } else {
+                    ipc.keys_pressed &= (KEY_UP);
+                }
+            }
+            if (gamepad.dpad.down == element) {
+                if (gamepad.dpad.down.isPressed) {
+                    ipc.keys_pressed |= KEY_DOWN;
+                } else {
+                    ipc.keys_pressed &= (KEY_DOWN);
+                }
+            }
+            
+            if (gamepad.buttonA == element) {
+                if (gamepad.buttonA.isPressed) {
+                    ipc.keys_pressed |= KEY_A;
+                } else {
+                    ipc.keys_pressed &= (KEY_A);
+                }
+            }
+            if (gamepad.buttonB == element) {
+                if (gamepad.buttonB.isPressed) {
+                    ipc.keys_pressed |= KEY_B;
+                } else {
+                    ipc.keys_pressed &= (KEY_B);
+                }
+            }
+            if (gamepad.buttonX == element) {
+                if (gamepad.buttonX.isPressed) {
+                    ipc.keys_pressed |= KEY_SELECT;
+                } else {
+                    ipc.keys_pressed &= (KEY_SELECT);
+                }
+            }
+            if (gamepad.buttonY == element) {
+                if (gamepad.buttonY.isPressed) {
+                    ipc.keys_pressed |= KEY_START;
+                } else {
+                    ipc.keys_pressed &= (KEY_START);
+                }
+            }
+        };
+        
+        myController.controllerPausedHandler = ^(GCController *controller)
+        {
+            NSLog(@"Pause button pressed");
+//            [self togglePauseResumeState];
+        };
+        
+        NSLog(@"controller found");
+    }
 }
 
 
@@ -448,12 +515,7 @@
 - (BOOL)shouldAutorotate {
     
     NSLog(@"shouldAutorotate");
-    
-    if (![crocodsAppDelegate delegate].isPro) {
-        NSLog(@"!!!! non pro !!");
-        return false;
-    }
-    
+        
     UIInterfaceOrientation interfaceOrientation = [[UIDevice currentDevice] orientation];
     
     if (interfaceOrientation!=UIDeviceOrientationUnknown) {

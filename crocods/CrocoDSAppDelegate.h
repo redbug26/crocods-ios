@@ -13,9 +13,7 @@
 @interface crocodsAppDelegate : NSObject <UIApplicationDelegate> {
     UIWindow *mainWindow; // Main App Window
 	UINavigationController *navigationController;
-    
-    bool isPro;
-    
+        
     bool _useIcade;
     bool _useFling;
     bool _useExternalKeyboard;
@@ -23,8 +21,6 @@
 
 +(crocodsAppDelegate *)delegate;
 
-
-@property (atomic, assign) bool isPro;
 
 @property (nonatomic, assign) bool useIcade;
 @property (nonatomic, assign) bool useFling;
